@@ -1,2 +1,2 @@
 # onixapi
-Onix data access core API sssss
+Onix data access core API
