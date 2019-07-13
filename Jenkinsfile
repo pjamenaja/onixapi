@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                echo 'Hello world - OnixAPI from master!' 
+                echo 'Hello world - OnixAPI from dev/feature1!' 
             }
         }
     }
