@@ -1,11 +1,17 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1') {
+        stage('Build') {
             steps {
-                echo 'Hello world!' 
                 sh "dotnet build"
             }
         }
     }
+    stages {
+        stage('Unit Test') {
+            steps {
+                sh "dotnet test"
+            }
+        }
+    }    
 }
