@@ -6,12 +6,10 @@ pipeline {
                 sh "dotnet build"
             }
         }
-    }
-    stages {
         stage('Unit Test') {
             steps {
                 sh "dotnet test"
             }
-        }
-    }    
+        }        
+    }
 }
