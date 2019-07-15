@@ -20,13 +20,10 @@ namespace Onix.Api.Erp.Business.HumanResources.Employees
 
             String s = "Hello";
             String k = "Hello";
-            if (k == s)
-            {
 
-            }
-            else if (k != s)
+            if (s != "")
             {
-                
+                throw new ArgumentException("Bad argument", "dat");
             }
 
             return o;
