@@ -18,8 +18,16 @@ namespace Onix.Api.Erp.Business.HumanResources.Employees
             CTable o = new CTable();
             BusinessOperationUtils.PopulateRow(qe, o, "EMPLOYEE_LIST", rows);
 
-            int j = 0;
-            int i = 10/j;
+            String s = "Hello";
+            String k = "Hello";
+            if (k == s)
+            {
+
+            }
+            else if (k != s)
+            {
+                
+            }
 
             return o;
         }
