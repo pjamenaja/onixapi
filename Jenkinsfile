@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Start Code Analysis') {            
             steps {                
-                sh "/home/tomcat/.dotnet/tools/dotnet-sonarscanner/dotnet-sonarscanner begin \
+                sh "/home/tomcat/.dotnet/tools/dotnet-sonarscanner begin \
                     /key:pjamenaja_onixapi \
                     /o:pjamenaja \
                     /v:SNAPSHOT \
@@ -28,7 +28,7 @@ pipeline {
         } 
         stage('End Code Analysis') {
             steps {
-                sh "/home/tomcat/.dotnet/tools/dotnet-sonarscanner/dotnet-sonarscanner end /d:sonar.login=${params.SONAR_LOGIN_KEY}"
+                sh "/home/tomcat/.dotnet/tools/dotnet-sonarscanner end /d:sonar.login=${params.SONAR_LOGIN_KEY}"
             }
         }        
     }
