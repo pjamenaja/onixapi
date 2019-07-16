@@ -10,6 +10,8 @@ namespace Onix.Api.Erp.Business.HumanResources.Employees
 {
 	public class GetEmployeeList : BusinessOperationBase
 	{
+        static readonly int x = 1;  // Noncompliant
+
         protected override CTable Execute(CTable dat)
         {
             IDatabaseQuery qe = FactoryDbOperation.GetQueryObject("QueryEmployeeGetList", DbContext);
@@ -17,14 +19,6 @@ namespace Onix.Api.Erp.Business.HumanResources.Employees
 
             CTable o = new CTable();
             BusinessOperationUtils.PopulateRow(qe, o, "EMPLOYEE_LIST", rows);
-
-            String s = "Hello";
-            String k = "Hello";
-
-            if (s != "")
-            {
-                throw new ArgumentException("Bad argument", "dat");
-            }
 
             return o;
         }
