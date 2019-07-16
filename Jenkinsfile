@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Start Code Analysis') {            
             steps {                
-                sh "/opt/dotnet_tools/dotnet-sonarscanner begin \
+                sh "dotnet-sonarscanner begin \
                     /key:pjamenaja_onixapi \
                     /o:pjamenaja \
                     /v:SNAPSHOT \
@@ -28,7 +28,7 @@ pipeline {
         } 
         stage('End Code Analysis') {
             steps {
-                sh "/opt/dotnet_tools/dotnet-sonarscanner end /d:sonar.login=${params.SONAR_LOGIN_KEY}"
+                sh "dotnet-sonarscanner end /d:sonar.login=${params.SONAR_LOGIN_KEY}"
             }
         }        
     }
