@@ -1,6 +1,5 @@
 using System;
 using System.Linq;
-using System.Reflection;
 using System.Linq.Expressions;
 using System.Collections;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +9,7 @@ namespace Onix.Api.Commons
     public delegate IQueryable QueryDelegate(CTable data);
     public delegate void PopulateCTable(CTable data, ViewBase vw, ArrayList configs);
     public delegate ArrayList ConfigFields();
-    public delegate IQueryable OrderByDelegate<T>(IQueryable<T> query) where T : ViewBase;
+    public delegate IQueryable OrderByDelegate<in T>(IQueryable<T> query) where T : ViewBase;
 
     public delegate Expression CustomWhereExprDelegate(ParameterExpression param, CTable data);
 
@@ -45,8 +44,8 @@ namespace Onix.Api.Commons
 
     public class QueryBase : IDatabaseQuery
     {
-        private QueryConfigParam param = new QueryConfigParam();
-        private Hashtable configs = new Hashtable();
+        private readonly QueryConfigParam param = new QueryConfigParam();
+        private readonly Hashtable configs = new Hashtable();
         private int totalRow = 0;
         private int totalChunk = 0;
 
@@ -110,43 +109,43 @@ namespace Onix.Api.Commons
                 string value = data.GetFieldValue(cfg.FieldName);
                 string name = String.Format("{0}.{1}", cfg.ObjectName, cfg.PropertyName);
 
-                if (!value.Equals("") && cfg.FieldType.Equals("S"))                
+                if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("S"))                
                 {
                     Expression likeExpr = QueryExpression.GetLikeExpr(startParam, name, value);
                     expr = Expression.And(expr, likeExpr);                    
                 }
-                else if (!value.Equals("") && cfg.FieldType.Equals("C"))                
+                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("C"))                
                 {
                     //String equal exactly
                     Expression likeExpr = QueryExpression.GetEqualsExpr(startParam, name, value);
                     expr = Expression.And(expr, likeExpr);                    
                 }
-                else if (!value.Equals("") && cfg.FieldType.Equals("CHECK_NULL"))                
+                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("CHECK_NULL"))                
                 {
                     Expression nullExpr = QueryExpression.GetNullExpr(startParam, name, value);
                     expr = Expression.And(expr, nullExpr);                    
                 }
-                else if (!value.Equals("") && cfg.FieldType.Equals("INC_SET"))                
+                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("INC_SET"))                
                 {
                     Expression inSetExpr = QueryExpression.GetInSetExpr(startParam, name, value, type);
                     expr = Expression.And(expr, inSetExpr);                    
                 }
-                else if (!value.Equals("") && cfg.FieldType.Equals("EXC_SET"))                
+                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("EXC_SET"))                
                 {
                     Expression inSetExpr = QueryExpression.GetNotInSetExpr(startParam, name, value, type);
                     expr = Expression.And(expr, inSetExpr);                    
                 }
-                else if (!value.Equals("") && cfg.FieldType.Equals("FD"))                
+                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("FD"))                
                 {
                     Expression fromDateExpr = QueryExpression.GetGreaterThanExpr(startParam, name, value);
                     expr = Expression.And(expr, fromDateExpr);             
                 }
-                else if (!value.Equals("") && cfg.FieldType.Equals("TD"))                
+                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("TD"))                
                 {
                     Expression toDateExpr = QueryExpression.GetLessThanExpr(startParam, name, value);
                     expr = Expression.And(expr, toDateExpr);             
                 }                                                    
-                else if (!value.Equals("")) 
+                else if (!string.IsNullOrEmpty(value)) 
                 {
                     //Treat as number 
                     Expression idEqualExpr = QueryExpression.GetEqualsExpr(startParam, name, Convert.ToInt32(value));
@@ -208,7 +207,7 @@ namespace Onix.Api.Commons
             int currentChunk = 0;
 
             string fieldValue = dat.GetFieldValue(param.PageNumberField);            
-            if (!fieldValue.Equals(""))
+            if (!string.IsNullOrEmpty(fieldValue))
             {
                 //Throw exception if not number
                 currentChunk = Int32.Parse(fieldValue);

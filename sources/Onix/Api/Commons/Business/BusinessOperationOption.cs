@@ -7,7 +7,7 @@ namespace Onix.Api.Commons.Business
 {
 	public class BusinessOperationOption
 	{    
-        private string allowRoles = "";
+        private readonly string allowRoles;
 
         public BusinessOperationOption(string allowList)
         {

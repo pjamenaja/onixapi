@@ -7,9 +7,9 @@ namespace Onix.Api.Commons
 	/// </summary>
 	class CField
 	{
-		private String type = "";
-		private String value = "";
-		private String name = "";
+		private readonly String type;
+		private readonly String name;
+		private String value;		
 		
 		public CField(String t, String v, String fldName)
 		{

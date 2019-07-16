@@ -10,7 +10,7 @@ namespace Onix.Api.Commons
 {
 	public class ManipulationGetSeq : IDatabaseSequence
 	{
-        private DbContext context = null;
+        private readonly DbContext context = null;
 
         public ManipulationGetSeq(DbContext db)
         {

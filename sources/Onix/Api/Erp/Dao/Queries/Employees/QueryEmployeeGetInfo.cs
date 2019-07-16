@@ -11,7 +11,7 @@ namespace Onix.Api.Erp.Dao.Queries.Employees
 {
     public class QueryEmployeeGetInfo : QueryBase
     {
-        private OnixDbContext context = null;
+        private readonly OnixDbContext context = null;
 
         public QueryEmployeeGetInfo(OnixDbContext db) : base(db)
         {

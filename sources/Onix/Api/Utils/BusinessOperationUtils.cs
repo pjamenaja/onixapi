@@ -6,7 +6,7 @@ using Onix.Api.Commons;
 
 namespace Onix.Api.Utils
 {    
-    public class BusinessOperationUtils
+    public static class BusinessOperationUtils
     {
         public static void PopulateRow(IDatabaseQuery qe, CTable data, String arrName, ArrayList rows)
         {

@@ -35,13 +35,7 @@ namespace Onix.Api.Commons
             DbSet<T> dbSet = getDbSet<T>();
 
             dbSet.Remove((T) em);   
-/*                 
-            List<T> lists = dbSet.Take(1).ToList();   
 
-            populatePkProperty(em, data);
-            dbSet.Attach((T) em);
-            populateProperties(em, data);
-*/
             context.SaveChanges();
         }
 

@@ -6,10 +6,9 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Onix.Api.Factories
 {   
-    public class FactoryDbContext
+    public static class FactoryDbContext
     {
         private static Hashtable dbContextHash = new Hashtable();
-        private static Hashtable dbContextHashForTesting = new Hashtable();
         private static Hashtable classMaps = null;
 
         private static Hashtable initContextMap()
