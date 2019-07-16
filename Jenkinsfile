@@ -6,7 +6,7 @@ pipeline {
                 sh '''/opt/sonar-scanner-3.3.0.1492/bin/sonar-scanner \
                   -Dsonar.projectKey=pjamenaja_onixapi \
                   -Dsonar.organization=pjamenaja \
-                  -Dsonar.sources=.,sources \
+                  -Dsonar.sources=. \
                   -Dsonar.branch.name=trunk \
                   -Dsonar.projectVersion=SNAPSHOT \
                   -Dsonar.log.level=DEBUG \
