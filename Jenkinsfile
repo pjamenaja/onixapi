@@ -7,7 +7,7 @@ pipeline {
                   -Dsonar.projectKey=pjamenaja_onixapi \
                   -Dsonar.organization=pjamenaja \
                   -Dsonar.sources=. \
-                  -Dsonar.branch.name=trunk \
+                  -Dsonar.branch.name=dev/test_new_feature \
                   -Dsonar.projectVersion=SNAPSHOT \
                   -Dsonar.log.level=DEBUG \
                   -Dsonar.host.url=https://sonarcloud.io \
