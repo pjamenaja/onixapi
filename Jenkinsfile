@@ -1,10 +1,25 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1') {
+        stage('Static Code Analysis') {
             steps {
-                echo 'Hello world!' 
+                sh '''/opt/sonar-scanner-3.3.0.1492/bin/sonar-scanner \
+                  -Dsonar.projectKey=pjamenaja_onixapi \
+                  -Dsonar.organization=pjamenaja \
+                  -Dsonar.sources=. \
+                  -Dsonar.host.url=https://sonarcloud.io \
+                  -Dsonar.login=d7c6549b1a4aedfe7318858b8e1b816343d5b080'''
+            }
+        }          
+        stage('Build') {
+            steps {
+                sh "dotnet build"
             }
         }
+        stage('Unit Test') {
+            steps {
+                sh "dotnet test"
+            }
+        }   
     }
 }

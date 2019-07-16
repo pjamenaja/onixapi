@@ -10,6 +10,8 @@ namespace Onix.Api.Erp.Business.HumanResources.Employees
 {
 	public class GetEmployeeList : BusinessOperationBase
 	{
+        static readonly int x = 1;  // Noncompliant - should be warned by Sonarqube
+
         protected override CTable Execute(CTable dat)
         {
             IDatabaseQuery qe = FactoryDbOperation.GetQueryObject("QueryEmployeeGetList", DbContext);
