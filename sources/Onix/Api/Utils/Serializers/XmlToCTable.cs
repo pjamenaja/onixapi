@@ -9,7 +9,7 @@ namespace Onix.Api.Utils.Serializers
 {
     public class XmlToCTable : ICTableDeserializer
     {
-        private string xml = "";
+        private readonly string xml;
 
         public XmlToCTable(string content)
         {
@@ -29,7 +29,6 @@ namespace Onix.Api.Utils.Serializers
             {
                 XmlDocument doc = new XmlDocument();
                 doc.LoadXml(xml);
-                //populateObject(doc.ChildNodes[1], root);
                 root = getRootObject(doc.ChildNodes[1]);
             }
             catch (Exception e)
@@ -39,7 +38,6 @@ namespace Onix.Api.Utils.Serializers
 
                 prm.SetFieldValue("ERROR_CODE", "1");
                 prm.SetFieldValue("ERROR_DESC", e.Message);
-                //prm.SetFieldValue("ERROR_DESC2", xml);
 
                 root = new CRoot(prm, data);
             }

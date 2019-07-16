@@ -1,8 +1,5 @@
 using System;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Console;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 using Onix.Api.Utils;
 
@@ -10,7 +7,7 @@ namespace Onix.Api.Erp.Dao.Models
 {
     public partial class OnixDbContext : DbContext
     {
-        private LibSetting setting = null;
+        private readonly LibSetting setting = null;
 
         public OnixDbContext()
         {

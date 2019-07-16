@@ -9,7 +9,7 @@ namespace Onix.Api.Commons
 {
     public class ManipulationConfig
     {
-        public ArrayList FieldConfigs = null;
+        public ArrayList FieldConfigs { get; set; }
     }
 
 	public class ManipulationBase : IDatabaseManipulation
@@ -47,41 +47,41 @@ namespace Onix.Api.Commons
 
         protected void populatePkProperty(OnixBaseModel em, CTable data)
         {
-            foreach (FieldConfig cfg in cfg.FieldConfigs)
+            foreach (FieldConfig fldCfg in cfg.FieldConfigs)
             {
-                if (!cfg.FieldName.Equals(pkFieldName))
+                if (!fldCfg.FieldName.Equals(pkFieldName))
                 {
                     continue;
                 }
 
                 //Only primary key here and should be only one
 
-                string fieldValue = data.GetFieldValue(cfg.FieldName);
-                var propInfo = em.GetType().GetProperty(cfg.PropertyName);
+                string fieldValue = data.GetFieldValue(fldCfg.FieldName);
+                var propInfo = em.GetType().GetProperty(fldCfg.PropertyName);
                 propInfo.SetValue(em, Int32.Parse(fieldValue));                            
             }
         }
 
         protected void populateProperties(OnixBaseModel em, CTable data)
         {
-            foreach (FieldConfig cfg in cfg.FieldConfigs)
+            foreach (FieldConfig fldCfg in cfg.FieldConfigs)
             {
-                string fieldValue = data.GetFieldValue(cfg.FieldName);
-                fieldValue = FilterFunctionUtils.invoke(cfg.FilterFuncName, fieldValue);
+                string fieldValue = data.GetFieldValue(fldCfg.FieldName);
+                fieldValue = FilterFunctionUtils.invoke(fldCfg.FilterFuncName, fieldValue);
 
-                var propInfo = em.GetType().GetProperty(cfg.PropertyName);
+                var propInfo = em.GetType().GetProperty(fldCfg.PropertyName);
                 Type t = propInfo.PropertyType;
                 if ((t == typeof(int)) ||  (t == typeof(int?)))
                 {
-                    if (!fieldValue.Equals(""))
+                    if (!string.IsNullOrEmpty(fieldValue))
                     {
                         propInfo.SetValue(em, Int32.Parse(fieldValue));
                     }                     
                 }
                 else if (t == typeof(double) || t == typeof(int?))
                 {
-                    if (!fieldValue.Equals(""))
-                    {                    
+                    if (!string.IsNullOrEmpty(fieldValue))
+                    {
                         propInfo.SetValue(em, Double.Parse(fieldValue));
                     }
                 }

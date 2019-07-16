@@ -52,7 +52,7 @@ namespace Onix.Api.Utils
         {
             set 
             {
-                instance.logFactory = value;
+                logFactory = value;
             }
 
             get

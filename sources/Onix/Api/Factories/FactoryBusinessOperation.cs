@@ -5,7 +5,7 @@ using Onix.Api.Commons.Business;
 
 namespace Onix.Api.Factories
 {   
-    public class FactoryBusinessOperation
+    public static class FactoryBusinessOperation
     {
         private static Hashtable classMaps = new Hashtable();
         private static Hashtable roleMaps = new Hashtable();
@@ -23,7 +23,7 @@ namespace Onix.Api.Factories
 
         private static void initClassMap()
         {
-            BusinessOperationOption adminRole = new BusinessOperationOption("Admins");
+            //Use "Admins" role in the future for security access
             BusinessOperationOption userRole = new BusinessOperationOption("Users");
             BusinessOperationOption allowAllRole = new BusinessOperationOption("All");
 
@@ -39,7 +39,7 @@ namespace Onix.Api.Factories
             string className = (string)classMaps[name];
             if (className == null)
             {
-                throw new Exception(String.Format("Operation not found [{0}]", name));
+                throw new ArgumentNullException(String.Format("Operation not found [{0}]", name));
             }
 
             Assembly asm = Assembly.GetExecutingAssembly();

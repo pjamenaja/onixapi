@@ -12,7 +12,7 @@ namespace Onix.Api.Erp.Dao.Queries.UnitTesting
 {
     public class QueryUnitTestingGeneric : QueryBase
     {
-        private DbContextUnitTesting context = null;
+        private readonly DbContextUnitTesting context = null;
 
         public QueryUnitTestingGeneric(DbContextUnitTesting db) : base(db)
         {
@@ -69,7 +69,8 @@ namespace Onix.Api.Erp.Dao.Queries.UnitTesting
         }
 
         private void populateGenetic(CTable t, ViewBase vw, ArrayList configs)
-        {                    
+        {                 
+            //Do nothing   
         }
     }
 }

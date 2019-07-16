@@ -7,7 +7,7 @@ using Onix.Api.Commons;
 
 namespace Onix.Api.Factories
 {   
-    public class FactoryDbOperation
+    public static class FactoryDbOperation
     {
         private static Hashtable classMaps = new Hashtable();
 

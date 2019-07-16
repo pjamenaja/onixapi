@@ -6,11 +6,11 @@ using Onix.Api.Commons;
 
 namespace Onix.Api.Utils.Serializers
 {
-    public class CTableToXML : ICTableSerializer
+    public class CTableToXml : ICTableSerializer
     {
-        private CRoot root = null;
+        private readonly CRoot root = null;
 
-        public CTableToXML(CRoot rt)
+        public CTableToXml(CRoot rt)
         {
             root = rt;
         }

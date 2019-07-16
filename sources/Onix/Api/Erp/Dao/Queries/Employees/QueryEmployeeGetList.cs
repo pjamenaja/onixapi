@@ -12,7 +12,7 @@ namespace Onix.Api.Erp.Dao.Queries.Employees
 {
     public class QueryEmployeeGetList : QueryBase
     {
-        private OnixDbContext context = null;
+        private readonly OnixDbContext context = null;
 
         public QueryEmployeeGetList(OnixDbContext db) : base(db)
         {
@@ -70,7 +70,8 @@ namespace Onix.Api.Erp.Dao.Queries.Employees
         }
 
         private void populateGetList(CTable t, ViewBase vw, ArrayList configs)
-        {                    
+        {  
+            //Intended to do nothing                  
         }
     }
 }

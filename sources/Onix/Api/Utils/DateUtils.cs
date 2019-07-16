@@ -2,7 +2,7 @@ using System;
 
 namespace Onix.Api.Utils
 {    
-    public class DateUtils
+    public static class DateUtils
     {
         public static string DateTimeToDateStringInternalMin(DateTime? dt)
         {
@@ -40,9 +40,9 @@ namespace Onix.Api.Utils
 
         public static DateTime InternalDateToDate(string intDate)
         {
-            DateTime myDate = DateTime.MinValue;
+            DateTime myDate;
 
-            if (intDate.Equals(""))
+            if (string.IsNullOrEmpty(intDate))
             {
                 return (DateTime.Now);
             }

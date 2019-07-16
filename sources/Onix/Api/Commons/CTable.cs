@@ -5,11 +5,11 @@ namespace Onix.Api.Commons
 {
 	public class CTable
 	{
-		private Hashtable fieldsHash = new Hashtable();
-		private ArrayList fieldsArr = new ArrayList();
+		private readonly Hashtable fieldsHash = new Hashtable();
+		private readonly ArrayList fieldsArr = new ArrayList();
 		
-		private String tbn = "";
-		private Hashtable childHash = new Hashtable();
+		private readonly String tbn = "";
+		private readonly Hashtable childHash = new Hashtable();
 		
 		public CTable(String table)
 		{

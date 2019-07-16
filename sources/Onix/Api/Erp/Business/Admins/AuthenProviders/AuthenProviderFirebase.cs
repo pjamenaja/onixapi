@@ -27,7 +27,7 @@ namespace Onix.Api.Erp.Business.Admins.AuthenProviders
                 throw(new Exception("Authentication error - invalid token returned!!!"));
             }
 
-            //o.SetFieldValue("FIREBASE_TOKEN", result.FirebaseToken);
+            //May add "FIREBASE_TOKEN" from result.FirebaseToken in the future;
             o.SetFieldValue("EMAIL", result.User.Email);
             o.SetFieldValue("UID", result.User.LocalId);            
 

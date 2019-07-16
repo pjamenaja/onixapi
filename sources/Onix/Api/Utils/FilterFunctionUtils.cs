@@ -5,7 +5,7 @@ namespace Onix.Api.Utils
 {
     public delegate string FilterFuncDelegate(string param);
 
-    public class FilterFunctionUtils
+    public static class FilterFunctionUtils
     {
         private static Hashtable funcMap = null;
 
@@ -36,7 +36,7 @@ namespace Onix.Api.Utils
             }
 
             FilterFuncDelegate func = (FilterFuncDelegate) funcMap[funcName];
-            if (funcName.Equals("") || (func == null))
+            if (string.IsNullOrEmpty(funcName) || (func == null))
             {
                 return funcValue;
             }

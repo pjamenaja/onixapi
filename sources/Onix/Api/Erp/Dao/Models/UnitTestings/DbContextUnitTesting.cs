@@ -19,10 +19,12 @@ namespace Onix.Api.Erp.Dao.Models.UnitTesting
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            //Intened to do nothing
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Intened to do nothing
         }
     }
 }
