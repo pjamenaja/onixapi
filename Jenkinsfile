@@ -1,17 +1,19 @@
 pipeline {
     agent any 
+    
+    parameters {
+        string(name: 'SONAR_LOGIN_KEY', description: 'Sonarqube logon key')
+    }    
+    
     stages {
-        stage('Static Code Analysis') {
-            steps {
-                sh '''/opt/sonar-scanner-3.3.0.1492/bin/sonar-scanner \
-                  -Dsonar.projectKey=pjamenaja_onixapi \
-                  -Dsonar.organization=pjamenaja \
-                  -Dsonar.sources=. \
-                  -Dsonar.branch.name=trunk \
-                  -Dsonar.projectVersion=SNAPSHOT \
-                  -Dsonar.log.level=DEBUG \
-                  -Dsonar.host.url=https://sonarcloud.io \
-                  -Dsonar.login=d7c6549b1a4aedfe7318858b8e1b816343d5b080'''
+        stage('Start Code Analysis') {            
+            steps {                
+                sh '''/opt/dotnet_tools/dotnet-sonarscanner begin \
+                    /key:"pjamenaja_onixapi" \
+                    /o:pjamenaja \
+                    /v:SNAPSHOT \
+                    /d:sonar.host.url=https://sonarcloud.io \
+                    /d:sonar.login=${params.SONAR_LOGIN_KEY}'''
             }
         }          
         stage('Build') {
@@ -23,6 +25,11 @@ pipeline {
             steps {
                 sh "dotnet test"
             }
-        }   
+        } 
+        stage('End Code Analysis') {
+            steps {
+                sh "/opt/dotnet_tools/dotnet-sonarscanner end /d:sonar.login=${params.SONAR_LOGIN_KEY}"
+            }
+        }        
     }
 }
