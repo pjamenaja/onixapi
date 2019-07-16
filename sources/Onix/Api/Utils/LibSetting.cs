@@ -20,7 +20,7 @@ namespace Onix.Api.Utils
         {
             IServiceCollection serviceCollection = new ServiceCollection();
             serviceCollection.AddLogging(builder => builder                
-                .AddFilter(level => level >= LogLevel.Error));
+                .AddFilter(level => level >= LogLevel.Information));
 
             logFactory = serviceCollection.BuildServiceProvider().GetService<ILoggerFactory>();
         }
