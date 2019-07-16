@@ -8,12 +8,12 @@ pipeline {
     stages {
         stage('Start Code Analysis') {            
             steps {                
-                sh '''/opt/dotnet_tools/dotnet-sonarscanner begin \
-                    /key:"pjamenaja_onixapi" \
+                sh "/opt/dotnet_tools/dotnet-sonarscanner begin \
+                    /key:pjamenaja_onixapi \
                     /o:pjamenaja \
                     /v:SNAPSHOT \
                     /d:sonar.host.url=https://sonarcloud.io \
-                    /d:sonar.login=${params.SONAR_LOGIN_KEY}'''
+                    /d:sonar.login=${params.SONAR_LOGIN_KEY}"
             }
         }          
         stage('Build') {
