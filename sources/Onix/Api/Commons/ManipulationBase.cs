@@ -9,7 +9,7 @@ namespace Onix.Api.Commons
 {
     public class ManipulationConfig
     {
-        public ArrayList FieldConfigs = null;
+        public ArrayList FieldConfigs { get; set; }
     }
 
 	public class ManipulationBase : IDatabaseManipulation
