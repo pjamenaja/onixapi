@@ -13,6 +13,7 @@ pipeline {
                     /o:pjamenaja \
                     /v:SNAPSHOT \
                     /d:sonar.host.url=https://sonarcloud.io \
+                    /d:sonar.branch.name=${env.BRANCH_NAME} \
                     /d:sonar.login=${params.SONAR_LOGIN_KEY}"
             }
         }          
