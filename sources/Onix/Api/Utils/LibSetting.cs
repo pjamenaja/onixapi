@@ -19,7 +19,8 @@ namespace Onix.Api.Utils
         private LibSetting()
         {
             IServiceCollection serviceCollection = new ServiceCollection();
-            serviceCollection.AddLogging(builder => builder                
+            serviceCollection.AddLogging(builder => builder
+                .AddConsole()
                 .AddFilter(level => level >= LogLevel.Information));
 
             logFactory = serviceCollection.BuildServiceProvider().GetService<ILoggerFactory>();
