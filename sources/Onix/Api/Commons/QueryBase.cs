@@ -91,6 +91,59 @@ namespace Onix.Api.Commons
             configs.Add(0, cfg);
         }        
 
+        private Expression performExpression(CTable data, FieldConfig cfg, ParameterExpression startParam, Expression expr, Type type)
+        {
+            Expression newExpr = expr;
+
+            string value = data.GetFieldValue(cfg.FieldName);
+            string name = String.Format("{0}.{1}", cfg.ObjectName, cfg.PropertyName);
+
+            if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("S"))
+            {
+                Expression likeExpr = QueryExpression.GetLikeExpr(startParam, name, value);
+                newExpr = Expression.And(expr, likeExpr);
+            }
+            else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("C"))
+            {
+                //String equal exactly
+                Expression likeExpr = QueryExpression.GetEqualsExpr(startParam, name, value);
+                newExpr = Expression.And(expr, likeExpr);
+            }
+            else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("CHECK_NULL"))
+            {
+                Expression nullExpr = QueryExpression.GetNullExpr(startParam, name, value);
+                newExpr = Expression.And(expr, nullExpr);
+            }
+            else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("INC_SET"))
+            {
+                Expression inSetExpr = QueryExpression.GetInSetExpr(startParam, name, value, type);
+                newExpr = Expression.And(expr, inSetExpr);
+            }
+            else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("EXC_SET"))
+            {
+                Expression inSetExpr = QueryExpression.GetNotInSetExpr(startParam, name, value, type);
+                newExpr = Expression.And(expr, inSetExpr);
+            }
+            else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("FD"))
+            {
+                Expression fromDateExpr = QueryExpression.GetGreaterThanExpr(startParam, name, value);
+                newExpr = Expression.And(expr, fromDateExpr);
+            }
+            else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("TD"))
+            {
+                Expression toDateExpr = QueryExpression.GetLessThanExpr(startParam, name, value);
+                newExpr = Expression.And(expr, toDateExpr);
+            }
+            else if (!string.IsNullOrEmpty(value))
+            {
+                //Treat as number 
+                Expression idEqualExpr = QueryExpression.GetEqualsExpr(startParam, name, Convert.ToInt32(value));
+                newExpr = Expression.And(expr, idEqualExpr);
+            }
+
+            return newExpr;
+        }
+
         protected Expression<Func<T, bool>> getWhereLambda<T>(CTable data) where T : ViewBase
         {
             Type type = typeof(T);            
@@ -106,51 +159,7 @@ namespace Onix.Api.Commons
                     continue;
                 }
 
-                string value = data.GetFieldValue(cfg.FieldName);
-                string name = String.Format("{0}.{1}", cfg.ObjectName, cfg.PropertyName);
-
-                if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("S"))                
-                {
-                    Expression likeExpr = QueryExpression.GetLikeExpr(startParam, name, value);
-                    expr = Expression.And(expr, likeExpr);                    
-                }
-                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("C"))                
-                {
-                    //String equal exactly
-                    Expression likeExpr = QueryExpression.GetEqualsExpr(startParam, name, value);
-                    expr = Expression.And(expr, likeExpr);                    
-                }
-                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("CHECK_NULL"))                
-                {
-                    Expression nullExpr = QueryExpression.GetNullExpr(startParam, name, value);
-                    expr = Expression.And(expr, nullExpr);                    
-                }
-                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("INC_SET"))                
-                {
-                    Expression inSetExpr = QueryExpression.GetInSetExpr(startParam, name, value, type);
-                    expr = Expression.And(expr, inSetExpr);                    
-                }
-                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("EXC_SET"))                
-                {
-                    Expression inSetExpr = QueryExpression.GetNotInSetExpr(startParam, name, value, type);
-                    expr = Expression.And(expr, inSetExpr);                    
-                }
-                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("FD"))                
-                {
-                    Expression fromDateExpr = QueryExpression.GetGreaterThanExpr(startParam, name, value);
-                    expr = Expression.And(expr, fromDateExpr);             
-                }
-                else if (!string.IsNullOrEmpty(value) && cfg.FieldType.Equals("TD"))                
-                {
-                    Expression toDateExpr = QueryExpression.GetLessThanExpr(startParam, name, value);
-                    expr = Expression.And(expr, toDateExpr);             
-                }                                                    
-                else if (!string.IsNullOrEmpty(value)) 
-                {
-                    //Treat as number 
-                    Expression idEqualExpr = QueryExpression.GetEqualsExpr(startParam, name, Convert.ToInt32(value));
-                    expr = Expression.And(expr, idEqualExpr);
-                }           
+                expr = performExpression(data, cfg, startParam, expr, type);
             }
 
             CustomWhereExprDelegate func = param.CustomWhereExpressFunc;

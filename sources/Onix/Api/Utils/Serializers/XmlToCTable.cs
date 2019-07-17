@@ -79,6 +79,23 @@ namespace Onix.Api.Utils.Serializers
             return (table);
         }
 
+        private void constructArray(CRoot root, XmlNode n1)
+        {
+            String arrName = n1.Attributes["name"].Value;
+            List<CTable> arr = new List<CTable>();
+            root.AddChildArray(arrName, arr);
+
+            foreach (XmlNode n2 in n1.ChildNodes)
+            {
+                //Only OBJECTs are here
+                if (n2.Name.Equals("OBJECT"))
+                {
+                    CTable child = populateTableObject(n2);
+                    arr.Add(child);
+                }
+            }
+        }
+
         private CRoot getRootObject(XmlNode node)
         {
             CTable param = null;
@@ -96,24 +113,9 @@ namespace Onix.Api.Utils.Serializers
                 {
                     data = populateTableObject(n1);
                 }
-                else
+                else if (n1.Name.Equals("ITEMS"))
                 {
-                    if (n1.Name.Equals("ITEMS"))
-                    {
-                        String arrName = n1.Attributes["name"].Value;
-                        List<CTable> arr = new List<CTable>();
-                        root.AddChildArray(arrName, arr);
-
-                        foreach (XmlNode n2 in n1.ChildNodes)
-                        {
-                            //Only OBJECTs are here
-                            if (n2.Name.Equals("OBJECT"))
-                            {
-                                CTable child = populateTableObject(n2);
-                                arr.Add(child);
-                            }
-                        }
-                    }
+                    constructArray(root, n1); 
                 }
 
                 idx++;
