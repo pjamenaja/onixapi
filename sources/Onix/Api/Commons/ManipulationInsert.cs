@@ -52,24 +52,7 @@ namespace Onix.Api.Commons
             arr.Add("CreateDate:CREATE_DATE:GetCurrentDateTimeStr");
             arr.Add("ModifyDate:MODIFY_DATE:GetCurrentDateTimeStr");
 
-            ArrayList tempArr = new ArrayList();
-            foreach (String s in arr)
-            {
-                string[] fields = s.Split(':');
-                string property = fields[0];
-                string valueField = fields[1];
-
-                FieldConfig fcfg = new FieldConfig();
-                fcfg.FieldName = valueField;
-                fcfg.PropertyName = property;
-                if (fields.Count() >= 3)
-                {
-                    fcfg.FilterFuncName = fields[2];
-                }
-
-                tempArr.Add(fcfg);
-            }
-
+            ArrayList tempArr = setUpFieldConfigs(arr); 
             cfg.FieldConfigs = tempArr; 
         }        
     }

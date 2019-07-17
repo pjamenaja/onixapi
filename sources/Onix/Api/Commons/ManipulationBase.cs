@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections;
 using Microsoft.EntityFrameworkCore;
 
@@ -90,6 +91,29 @@ namespace Onix.Api.Commons
                     propInfo.SetValue(em, fieldValue);
                 }                                
             }
-        }        
+        }   
+
+        protected ArrayList setUpFieldConfigs(ArrayList arr)
+        {
+            ArrayList tempArr = new ArrayList();
+            foreach (String s in arr)
+            {
+                string[] fields = s.Split(':');
+                string property = fields[0];
+                string valueField = fields[1];
+
+                FieldConfig fcfg = new FieldConfig();
+                fcfg.FieldName = valueField;
+                fcfg.PropertyName = property;
+                if (fields.Count() >= 3)
+                {
+                    fcfg.FilterFuncName = fields[2];
+                }
+
+                tempArr.Add(fcfg);
+            }
+
+            return tempArr; 
+        }              
     }
 }
