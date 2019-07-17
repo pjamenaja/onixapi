@@ -20,7 +20,6 @@ namespace Onix.Api.Commons
 		
 		public String GetValue()
 		{
-			int i = 0;
 			return(value);
 		}
 		
