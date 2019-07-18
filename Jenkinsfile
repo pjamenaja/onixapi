@@ -7,6 +7,7 @@ pipeline {
     
     environment {
         SONAR_SCANNER = '/home/tomcat/.dotnet/tools/dotnet-sonarscanner'
+        COVERLET = '/home/tomcat/.dotnet/tools/coverlet'
         UNIT_TEST_ASSEMBLY = './tests/bin/Debug/netcoreapp2.2/OnixTest.dll'
     }
 
@@ -32,10 +33,10 @@ pipeline {
 
         stage('Unit Test') {
             steps {
-                sh "coverlet ${env.UNIT_TEST_ASSEMBLY} --target 'dotnet' --targetargs 'test . --no-build' --format opencover"
+                sh "${env.COVERLET} ${env.UNIT_TEST_ASSEMBLY} --target 'dotnet' --targetargs 'test . --no-build' --format opencover"
             }
         } 
-        
+
         stage('End Code Analysis') {
             steps {
                 sh "${env.SONAR_SCANNER} end /d:sonar.login=${params.SONAR_LOGIN_KEY}"
