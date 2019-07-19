@@ -79,7 +79,7 @@ namespace Onix.Api.Commons
                         propInfo.SetValue(em, Int32.Parse(fieldValue));
                     }                     
                 }
-                else if (t == typeof(double) || t == typeof(int?))
+                else if (t == typeof(double) || t == typeof(double?))
                 {
                     if (!string.IsNullOrEmpty(fieldValue))
                     {

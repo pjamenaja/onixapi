@@ -20,5 +20,7 @@ namespace Onix.Api.Erp.Dao.Models.UnitTesting
         public int? StatusForIsNullKey { get; set; }
         public string StringNullAbleField1 { get; set; }
         public string DocumentDate { get; set; }
+        public double? ThisIsDoubleField1 { get; set; }
+        public double ThisIsDoubleField2 { get; set; }
     }
 }

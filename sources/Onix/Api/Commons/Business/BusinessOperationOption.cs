@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using Microsoft.EntityFrameworkCore;
-using Onix.Api.Factories;
 
 namespace Onix.Api.Commons.Business
 {

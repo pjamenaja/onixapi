@@ -34,6 +34,7 @@ namespace Onix.Api.Erp.Dao.Queries.Employees
             arr.Add("EM.Website:S:WEBSITE:N:Y");
             arr.Add("EM.Phone:S:PHONE:N:Y");
             arr.Add("EM.BankId:REFID:BANK_ID:N:Y");
+            arr.Add("EM.HourRate:N:HOUR_RATE:N:Y");
 
             arr.Add("BNK.Code:S:BANK_CODE:N:Y");
             arr.Add("BNK.Description:S:BANK_NAME:N:Y");

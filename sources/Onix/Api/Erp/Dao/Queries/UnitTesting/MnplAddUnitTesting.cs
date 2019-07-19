@@ -41,6 +41,8 @@ namespace Onix.Api.Erp.Dao.Queries.UnitTesting
             arr.Add("StringNullAbleField1:STRING_NULLABLE_FIELD1");
             arr.Add("StatusForIsNullKey:STATUS_FOR_ISNULL_KEY");
             arr.Add("DocumentDate:DOCUMENT_DATE");
+            arr.Add("ThisIsDoubleField1:DOUBLE_FIELD1");
+            arr.Add("ThisIsDoubleField2:DOUBLE_FIELD2");
             
             return(arr);
         }

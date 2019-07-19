@@ -27,6 +27,8 @@ namespace Onix.Test.Api.Erp.Dao.UnitTesting
                 data.SetFieldValue("STRING_FIELD2", "NAME" + i);
                 data.SetFieldValue("STATUS_NOT_NULL_KEY", i);
                 data.SetFieldValue("STATUS_NULLABLE_KEY", i);
+                data.SetFieldValue("DOUBLE_FIELD1", "");
+                data.SetFieldValue("DOUBLE_FIELD2", 1.0 + i);
                 data.SetFieldValue("STRING_NULLABLE_FIELD1", "A" + i.ToString());
                 if ((i % 2) == 0)
                 {

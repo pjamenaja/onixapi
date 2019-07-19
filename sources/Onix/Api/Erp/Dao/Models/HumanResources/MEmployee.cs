@@ -104,6 +104,6 @@ namespace Onix.Api.Erp.Dao.Models
         public string IdNumber { get; set; }
 
         [Column("hour_rate")]
-        public decimal? HourRate { get; set; }
+        public double? HourRate { get; set; }
     }
 }

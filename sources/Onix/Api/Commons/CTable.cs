@@ -109,46 +109,6 @@ namespace Onix.Api.Commons
 			return(fieldsArr);
 		}
 
-        public void CopyFrom(CTable t)
-        {
-            foreach (CField f in t.GetTableFields())
-            {
-                SetFieldValue(f.GetName(), f.GetValue());
-            }
-        }
-
-        public CTable Clone()
-        {
-            CTable c = new CTable(tbn);
-
-            foreach (CField f in fieldsArr)
-            {
-                c.AddField(f.GetName(), "S", f.GetValue());
-            }
-
-            Hashtable ht = GetChildHash();
-            foreach (String key in ht.Keys)
-            {
-                ArrayList arr = (ArrayList) ht[key];
-
-                ArrayList newArr = new ArrayList();
-                c.AddChildArray(key, newArr);
-
-                foreach (CTable t in arr)
-                {
-                    CTable tb = new CTable(t.GetTableName());
-                    newArr.Add(tb);
-
-                    foreach (CField f in t.GetTableFields())
-                    {
-                        tb.AddField(f.GetName(), "S", f.GetValue());
-                    }
-                }
-            }
-
-            return (c);
-        }
-
         public CTable CloneAll()
         {
             CTable c = new CTable(tbn);
