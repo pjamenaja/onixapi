@@ -159,17 +159,7 @@ namespace Onix.Api.Commons
 
             return Expression.NotEqual(body, val);
         }
-
-        public static Expression GetEqualsExpr(ParameterExpression param, string property, double value)
-        {
-            Expression body = GetExpression(param, property);
-            Expression val = Expression.Constant(value);
-
-            val = convertToNullable(val, body);
-
-            return Expression.Equal(body, val);
-        }
-
+        
         public static Expression GetEqualsExpr(ParameterExpression param, string property, int value)
         {
             Expression body = GetExpression(param, property);

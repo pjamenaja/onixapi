@@ -22,6 +22,7 @@ namespace Onix.Test.Api.Erp.Dao.Employees
                 data.SetFieldValue("EMPLOYEE_ID", i);
                 data.SetFieldValue("EMPLOYEE_CODE", "CODE" + i);
                 data.SetFieldValue("EMPLOYEE_NAME", "NAME" + i);
+                data.SetFieldValue("HOUR_RATE", 1.10 + i);
 
                 arr.Add(data);
                 mnpl.Apply(data);

@@ -28,11 +28,6 @@ namespace Onix.Api.Commons
 			return(name);
 		}
 		
-		public String GetFieldType()
-		{
-			return(type);
-		}
-
 		public void SetValue(String v)
 		{
 			value = v;

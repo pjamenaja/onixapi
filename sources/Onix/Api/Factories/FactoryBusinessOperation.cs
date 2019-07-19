@@ -52,7 +52,7 @@ namespace Onix.Api.Factories
         {
             BusinessOperationOption role = (BusinessOperationOption) roleMaps[name];
             return(role);
-        }        
+        }
     }
  
 }

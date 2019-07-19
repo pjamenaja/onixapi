@@ -1,6 +1,5 @@
 using System.Collections;
 using NUnit.Framework;
-using Microsoft.EntityFrameworkCore;
 
 using Onix.Api.Commons;
 using Onix.Api.Factories;
