@@ -23,11 +23,6 @@ namespace Onix.Api.Utils.Serializers
             hashOfArray.Add(arrName, items);
 		}
 		
-		public List<CTable> GetChildArray(String arrName)
-		{
-			return((List<CTable>)hashOfArray[arrName]);
-		}
-		
 		public Hashtable GetChildHash()
 		{
 			return(hashOfArray);
