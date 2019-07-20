@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 
 using Onix.Api.Commons;
 
@@ -10,7 +9,6 @@ namespace Onix.Api.Utils.Serializers
     {
 		private CTable param = null;
 		private CTable data = null;
-        private readonly Hashtable hashOfArray = new Hashtable();
 
 		public CRoot(CTable prm, CTable dta)
 		{
@@ -18,21 +16,6 @@ namespace Onix.Api.Utils.Serializers
             data = dta;
 		}
 		
-		public void AddChildArray(String arrName, List<CTable> items)
-		{
-            hashOfArray.Add(arrName, items);
-		}
-		
-		public List<CTable> GetChildArray(String arrName)
-		{
-			return((List<CTable>)hashOfArray[arrName]);
-		}
-		
-		public Hashtable GetChildHash()
-		{
-			return(hashOfArray);
-		}
-
         public CTable Param
         {
             get

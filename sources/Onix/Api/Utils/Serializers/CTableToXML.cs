@@ -72,22 +72,6 @@ namespace Onix.Api.Utils.Serializers
             api.AppendChild(o1);
             api.AppendChild(o2);
 
-            Hashtable hashOfArray = root.GetChildHash();
-            foreach (String arrName in hashOfArray.Keys)
-            {
-                ArrayList arr = (ArrayList)hashOfArray[arrName];
-
-                XmlElement itm = doc.CreateElement("ITEMS");
-                itm.SetAttribute("name", arrName);
-                api.AppendChild(itm);
-
-                foreach (CTable t in arr)
-                {
-                    XmlElement o = createElementFromTable(doc, t);
-                    itm.AppendChild(o);
-                }
-            }
-
             doc.AppendChild(api);
             return (doc.OuterXml);
         }        

@@ -20,6 +20,7 @@ namespace Onix.Api.Commons
         public virtual int GetNextValue(string seqName)
         {
             int seq = 0;
+
             string sql = String.Format("SELECT NEXTVAL('{0}')", seqName);
 
             using (var command = context.Database.GetDbConnection().CreateCommand())

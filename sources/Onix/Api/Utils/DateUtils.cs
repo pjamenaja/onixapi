@@ -34,7 +34,10 @@ namespace Onix.Api.Utils
         {
             string text = string.Empty;
             if (dt != null)
-                text = dt?.ToString("yyyy/MM/dd HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+            {
+                DateTime dt1 = (DateTime) dt;
+                text = dt1.ToString("yyyy/MM/dd HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture);
+            }
             return (text);
         }
 
