@@ -20,7 +20,10 @@ pipeline {
             }                      
             steps {
                 sh "echo [${env.BUILT_VERSION}]"
-                BUILT_VERSION = '1.33.55'
+
+                environment {
+                    BUILT_VERSION = '1.33.55'
+                }                
             }
         } 
 
