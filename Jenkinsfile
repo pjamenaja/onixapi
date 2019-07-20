@@ -6,12 +6,26 @@ pipeline {
     }    
     
     environment {
+        BUILT_VERSION = '${VERSION}'
         SONAR_SCANNER = '/home/tomcat/.dotnet/tools/dotnet-sonarscanner'
         COVERLET = '/home/tomcat/.dotnet/tools/coverlet'
         UNIT_TEST_ASSEMBLY = './tests/bin/Release/netcoreapp2.2/OnixTest.dll'
     }
 
     stages {
+        stage('Initialize') {            
+            steps {
+                if (env.BUILT_VERSION == '${VERSION}')
+                {
+                    echo 'I only execute on the master branch'
+                } 
+                else 
+                {
+                    echo 'I execute elsewhere'
+                }
+            }
+        } 
+
         stage('Start Code Analysis') {            
             steps {                
                 sh "${env.SONAR_SCANNER} begin \
