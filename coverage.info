@@ -475,55 +475,55 @@ FNF:5
 FNH:5
 end_of_record
 SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Factories\FactoryDbContext.cs
-FN:14,System.Collections.Hashtable Onix.Api.Factories.FactoryDbContext::initContextMap()
+FN:13,System.Collections.Hashtable Onix.Api.Factories.FactoryDbContext::initContextMap()
 FNDA:1,System.Collections.Hashtable Onix.Api.Factories.FactoryDbContext::initContextMap()
+DA:14,1
 DA:15,1
-DA:16,1
+DA:17,1
 DA:18,1
-DA:19,1
+DA:20,1
 DA:21,1
-DA:22,1
-FN:24,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Factories.FactoryDbContext::GetDbContext(System.String)
+FN:23,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Factories.FactoryDbContext::GetDbContext(System.String)
 FNDA:0,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Factories.FactoryDbContext::GetDbContext(System.String)
+DA:24,0
 DA:25,0
 DA:26,0
 DA:27,0
 DA:28,0
-DA:29,0
+DA:30,0
 DA:31,0
 DA:32,0
 DA:33,0
 DA:34,0
 DA:35,0
 DA:36,0
-DA:37,0
+DA:38,0
 DA:39,0
-DA:40,0
+DA:41,0
 DA:42,0
-DA:43,0
-BRDA:26,11,0,0
-BRDA:26,11,1,0
-BRDA:32,48,0,0
-BRDA:32,48,1,0
-FN:45,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Factories.FactoryDbContext::GetDbContextForTesting(System.String,Microsoft.EntityFrameworkCore.DbContextOptions)
-FNDA:86,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Factories.FactoryDbContext::GetDbContextForTesting(System.String,Microsoft.EntityFrameworkCore.DbContextOptions)
-DA:46,86
-DA:49,86
+BRDA:25,11,0,0
+BRDA:25,11,1,0
+BRDA:31,48,0,0
+BRDA:31,48,1,0
+FN:44,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Factories.FactoryDbContext::GetDbContextForTesting(System.String,Microsoft.EntityFrameworkCore.DbContextOptions)
+FNDA:87,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Factories.FactoryDbContext::GetDbContextForTesting(System.String,Microsoft.EntityFrameworkCore.DbContextOptions)
+DA:45,87
+DA:48,87
+DA:49,1
 DA:50,1
 DA:51,1
-DA:52,1
-DA:54,86
-DA:55,86
-DA:56,86
-DA:57,86
-DA:59,86
-DA:60,86
-BRDA:49,11,0,1
-BRDA:49,11,1,86
-FN:10,System.Void Onix.Api.Factories.FactoryDbContext::.cctor()
+DA:53,87
+DA:54,87
+DA:55,87
+DA:56,87
+DA:58,87
+DA:59,87
+BRDA:48,11,0,1
+BRDA:48,11,1,87
+FN:9,System.Void Onix.Api.Factories.FactoryDbContext::.cctor()
 FNDA:1,System.Void Onix.Api.Factories.FactoryDbContext::.cctor()
+DA:10,1
 DA:11,1
-DA:12,1
 LF:35
 LH:19
 BRF:6
@@ -568,13 +568,13 @@ DA:55,96
 DA:57,96
 DA:58,96
 FN:60,Onix.Api.Commons.IDatabaseSequence Onix.Api.Factories.FactoryDbOperation::GetDataSequenceObject(System.String,Microsoft.EntityFrameworkCore.DbContext)
-FNDA:0,Onix.Api.Commons.IDatabaseSequence Onix.Api.Factories.FactoryDbOperation::GetDataSequenceObject(System.String,Microsoft.EntityFrameworkCore.DbContext)
-DA:61,0
-DA:62,0
-DA:63,0
-DA:64,0
-DA:66,0
-DA:67,0
+FNDA:1,Onix.Api.Commons.IDatabaseSequence Onix.Api.Factories.FactoryDbOperation::GetDataSequenceObject(System.String,Microsoft.EntityFrameworkCore.DbContext)
+DA:61,1
+DA:62,1
+DA:63,1
+DA:64,1
+DA:66,1
+DA:67,1
 FN:11,System.Void Onix.Api.Factories.FactoryDbOperation::.cctor()
 FNDA:1,System.Void Onix.Api.Factories.FactoryDbOperation::.cctor()
 DA:12,1
@@ -583,11 +583,11 @@ DA:38,1
 DA:39,1
 DA:40,1
 LF:38
-LH:32
+LH:38
 BRF:0
 BRH:0
 FNF:6
-FNH:5
+FNH:6
 end_of_record
 SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\MnplAddUnitTesting.cs
 FN:20,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.UnitTesting.MnplAddUnitTesting::createModel()
@@ -1263,21 +1263,21 @@ FNH:5
 end_of_record
 SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\UnitTestings\DbContextUnitTesting.cs
 FN:17,Microsoft.EntityFrameworkCore.DbSet`1<Onix.Api.Erp.Dao.Models.UnitTesting.MUnitTesting> Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::get_UnitTestingTable()
-FNDA:146,Microsoft.EntityFrameworkCore.DbSet`1<Onix.Api.Erp.Dao.Models.UnitTesting.MUnitTesting> Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::get_UnitTestingTable()
-DA:18,146
+FNDA:147,Microsoft.EntityFrameworkCore.DbSet`1<Onix.Api.Erp.Dao.Models.UnitTesting.MUnitTesting> Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::get_UnitTestingTable()
+DA:18,147
 FN:20,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
-FNDA:70,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
-DA:21,70
-DA:23,70
+FNDA:71,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
+DA:21,71
+DA:23,71
 FN:25,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
 FNDA:1,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
 DA:26,1
 DA:28,1
 FN:13,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<Microsoft.EntityFrameworkCore.DbContext>)
-FNDA:70,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<Microsoft.EntityFrameworkCore.DbContext>)
-DA:14,70
-DA:15,70
-DA:16,70
+FNDA:71,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<Microsoft.EntityFrameworkCore.DbContext>)
+DA:14,71
+DA:15,71
+DA:16,71
 LF:8
 LH:8
 BRF:0
@@ -1812,40 +1812,52 @@ FNF:5
 FNH:4
 end_of_record
 SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationGetSeq.cs
-FN:20,System.Int32 Onix.Api.Commons.ManipulationGetSeq::GetNextValue(System.String)
-FNDA:0,System.Int32 Onix.Api.Commons.ManipulationGetSeq::GetNextValue(System.String)
-DA:21,0
-DA:22,0
-DA:23,0
+FN:23,System.Void Onix.Api.Commons.ManipulationGetSeq::set_IsTrueSequence(System.Boolean)
+FNDA:0,System.Void Onix.Api.Commons.ManipulationGetSeq::set_IsTrueSequence(System.Boolean)
+DA:24,0
 DA:25,0
 DA:26,0
-DA:27,0
-DA:28,0
-DA:29,0
+FN:29,System.Int32 Onix.Api.Commons.ManipulationGetSeq::GetNextValue(System.String)
+FNDA:0,System.Int32 Onix.Api.Commons.ManipulationGetSeq::GetNextValue(System.String)
 DA:30,0
 DA:31,0
-DA:32,0
 DA:33,0
 DA:34,0
 DA:35,0
 DA:36,0
-DA:38,0
+DA:37,0
 DA:39,0
-BRDA:31,81,0,0
-BRDA:31,81,1,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:53,0
+BRDA:34,26,0,0
+BRDA:34,26,1,0
+BRDA:45,110,0,0
+BRDA:45,110,1,0
 FN:12,System.Void Onix.Api.Commons.ManipulationGetSeq::.ctor(Microsoft.EntityFrameworkCore.DbContext)
-FNDA:0,System.Void Onix.Api.Commons.ManipulationGetSeq::.ctor(Microsoft.EntityFrameworkCore.DbContext)
-DA:13,0
-DA:15,0
-DA:16,0
-DA:17,0
-DA:18,0
-LF:22
-LH:0
-BRF:2
+FNDA:1,System.Void Onix.Api.Commons.ManipulationGetSeq::.ctor(Microsoft.EntityFrameworkCore.DbContext)
+DA:13,1
+DA:14,1
+DA:16,1
+DA:17,1
+DA:18,1
+DA:19,1
+LF:30
+LH:6
+BRF:4
 BRH:0
-FNF:2
-FNH:0
+FNF:3
+FNH:1
 end_of_record
 SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationInsert.cs
 FN:17,System.Int32 Onix.Api.Commons.ManipulationInsert::Apply(Onix.Api.Commons.CTable)
