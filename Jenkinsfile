@@ -20,7 +20,7 @@ pipeline {
             }                      
             steps {
                 sh "echo [${env.BUILT_VERSION}]"
-                env.MYTOOL_VERSION = '1.33.55'
+                MYTOOL_VERSION = '1.33.55'
             }
         } 
 
