@@ -15,13 +15,12 @@ pipeline {
     stages {
         stage('Initialize') {            
             steps {
-                if (env.BUILT_VERSION == '${VERSION}')
-                {
-                    echo 'I only execute on the master branch'
-                } 
-                else 
-                {
-                    echo 'I execute elsewhere'
+                //conditional for parameter
+                when {
+                    environment name: 'BUILT_VERSION', value: '${VERSION}'
+                }
+                steps {
+                    sh 'HELLO WORLD'
                 }
             }
         } 
