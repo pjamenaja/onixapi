@@ -9,7 +9,8 @@ pipeline {
         BUILT_VERSION = '1.1.0-SNAPSHOT'
         SONAR_SCANNER = '/home/tomcat/.dotnet/tools/dotnet-sonarscanner'
         COVERLET = '/home/tomcat/.dotnet/tools/coverlet'
-        UNIT_TEST_ASSEMBLY = './tests/bin/Release/netcoreapp2.2/OnixTest.dll'
+        UNIT_TEST_ASSEMBLY = './tests/bin/Debug/netcoreapp2.2/OnixTest.dll'
+        BUILD_MODE = 'Debug'
     }
 
     stages {
@@ -30,7 +31,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh "dotnet build -c Release -p:Version=${env.BUILT_VERSION}"
+                sh "dotnet build -c ${env.BUILD_MODE} -p:Version=${env.BUILT_VERSION}"
             }
         }
 
