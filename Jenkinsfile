@@ -13,15 +13,13 @@ pipeline {
     }
 
     stages {
-        stage('Initialize') {            
+        stage('Initialize') {  
+            //conditional for parameter
+            when {
+                environment name: 'BUILT_VERSION', value: '${VERSION}'
+            }                      
             steps {
-                //conditional for parameter
-                when {
-                    environment name: 'BUILT_VERSION', value: '${VERSION}'
-                }
-                steps {
-                    sh 'HELLO WORLD'
-                }
+                sh "echo ${env.BUILT_VERSION}"
             }
         } 
 
