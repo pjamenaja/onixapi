@@ -6,9 +6,11 @@ pipeline {
     }    
     
     environment {
+        BUILT_VERSION = '1.1.0-SNAPSHOT'
         SONAR_SCANNER = '/home/tomcat/.dotnet/tools/dotnet-sonarscanner'
         COVERLET = '/home/tomcat/.dotnet/tools/coverlet'
         UNIT_TEST_ASSEMBLY = './tests/bin/Debug/netcoreapp2.2/OnixTest.dll'
+        BUILD_MODE = 'Release'
     }
 
     stages {
@@ -17,17 +19,19 @@ pipeline {
                 sh "${env.SONAR_SCANNER} begin \
                     /key:pjamenaja_onixapi \
                     /o:pjamenaja \
-                    /v:SNAPSHOT \
+                    /v:${env.BUILT_VERSION} \
                     /d:sonar.host.url=https://sonarcloud.io \
                     /d:sonar.branch.name=${env.BRANCH_NAME} \
                     /d:sonar.cs.opencover.reportsPaths=./coverage.opencover.xml \
                     /d:sonar.login=${params.SONAR_LOGIN_KEY}"
+
+                sh "echo [${env.BUILT_VERSION}]"
             }
-        }          
+        }
 
         stage('Build') {
             steps {
-                sh "dotnet build"
+                sh "dotnet build -c ${env.BUILD_MODE} -p:Version=${env.BUILT_VERSION}"
             }
         }
 

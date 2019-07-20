@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 using Onix.Api.Utils;
 
-namespace Onix.Test.Api.Factories
+namespace Onix.Test.Api.Utils
 {
     public class DateUtilsTest
     {
