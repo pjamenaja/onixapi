@@ -11,19 +11,10 @@ namespace Onix.Api.Commons
 	public class ManipulationGetSeq : IDatabaseSequence
 	{
         private readonly DbContext context = null;
-        private bool isTrueSequence = true;
 
         public ManipulationGetSeq(DbContext db)
         {
             context = db;
-        }
-
-        public bool SetIsTrueSequence
-        {
-            set
-            {
-                isTrueSequence = value;
-            }
         }
 
         public virtual int GetNextValue(string seqName)
@@ -31,10 +22,6 @@ namespace Onix.Api.Commons
             int seq = 0;
 
             string sql = String.Format("SELECT NEXTVAL('{0}')", seqName);
-            if (!isTrueSequence)
-            {
-                sql = String.Format("SELECT COUNT(*) FROM {0}", seqName);
-            }
 
             using (var command = context.Database.GetDbConnection().CreateCommand())
             {
