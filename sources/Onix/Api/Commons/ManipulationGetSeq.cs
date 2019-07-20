@@ -18,7 +18,7 @@ namespace Onix.Api.Commons
             context = db;
         }
 
-        public bool IsTrueSequence
+        public bool SetIsTrueSequence
         {
             set
             {

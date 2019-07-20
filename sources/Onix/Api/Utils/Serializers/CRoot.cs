@@ -9,7 +9,6 @@ namespace Onix.Api.Utils.Serializers
     {
 		private CTable param = null;
 		private CTable data = null;
-        private readonly Hashtable hashOfArray = new Hashtable();
 
 		public CRoot(CTable prm, CTable dta)
 		{
