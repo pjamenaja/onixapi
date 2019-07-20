@@ -6,7 +6,7 @@ pipeline {
     }    
     
     environment {
-        BUILT_VERSION = '${VERSION}'
+        BUILT_VERSION = 'VERSION'
         SONAR_SCANNER = '/home/tomcat/.dotnet/tools/dotnet-sonarscanner'
         COVERLET = '/home/tomcat/.dotnet/tools/coverlet'
         UNIT_TEST_ASSEMBLY = './tests/bin/Release/netcoreapp2.2/OnixTest.dll'
@@ -16,10 +16,10 @@ pipeline {
         stage('Initialize') {  
             //conditional for parameter
             when {
-                environment name: 'BUILT_VERSION', value: '${VERSION}'
+                environment name: 'BUILT_VERSION', value: 'VERSION'
             }                      
             steps {
-                sh "echo ${env.BUILT_VERSION}"
+                sh "echo [${env.BUILT_VERSION}]"
             }
         } 
 
@@ -33,6 +33,8 @@ pipeline {
                     /d:sonar.branch.name=${env.BRANCH_NAME} \
                     /d:sonar.cs.opencover.reportsPaths=./coverage.opencover.xml \
                     /d:sonar.login=${params.SONAR_LOGIN_KEY}"
+
+                sh "echo [${env.BUILT_VERSION}]"
             }
         }          
 
