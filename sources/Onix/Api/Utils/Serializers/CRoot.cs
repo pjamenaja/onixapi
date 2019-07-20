@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 
 using Onix.Api.Commons;
 
@@ -18,16 +17,6 @@ namespace Onix.Api.Utils.Serializers
             data = dta;
 		}
 		
-		public void AddChildArray(String arrName, List<CTable> items)
-		{
-            hashOfArray.Add(arrName, items);
-		}
-		
-		public Hashtable GetChildHash()
-		{
-			return(hashOfArray);
-		}
-
         public CTable Param
         {
             get
