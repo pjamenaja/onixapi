@@ -10,7 +10,7 @@ pipeline {
         SONAR_SCANNER = '/home/tomcat/.dotnet/tools/dotnet-sonarscanner'
         COVERLET = '/home/tomcat/.dotnet/tools/coverlet'
         UNIT_TEST_ASSEMBLY = './tests/bin/Debug/netcoreapp2.2/OnixTest.dll'
-        BUILD_MODE = 'Debug'
+        BUILD_MODE = 'Release'
     }
 
     stages {
