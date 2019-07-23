@@ -3,6 +3,7 @@ pipeline {
     
     parameters {
         string(name: 'SONAR_LOGIN_KEY', defaultValue: '0616e8ac5902cfec9bc6ee009b1b8c375de6a3aa', description: 'Sonarqube logon key')
+        string(name: 'NUGET_PUSH_KEY', defaultValue: 'oy2nkpvkrxmkd3g6axdqhxzuzlxzreuebchf22q5ffvn7u', description: 'Nuget push key')        
     }    
     
     environment {
