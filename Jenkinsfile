@@ -7,10 +7,12 @@ pipeline {
     }    
     
     environment {
+        PRODUCT_NAME = 'OnixApi'
         BUILT_VERSION = '1.1.0-SNAPSHOT'
         SONAR_SCANNER = '/home/tomcat/.dotnet/tools/dotnet-sonarscanner'
         COVERLET = '/home/tomcat/.dotnet/tools/coverlet'
         UNIT_TEST_ASSEMBLY = './tests/bin/Debug/netcoreapp2.2/OnixTest.dll'
+        PACKAGE_PATH = './sources/bin/Release'
         BUILD_MODE = 'Release'
     }
 
@@ -36,6 +38,14 @@ pipeline {
             }
         }
 
+        stage('Nuget Publish') {
+            steps {
+                sh "dotnet nuget push ${env.PACKAGE_PATH}/${env.PRODUCT_NAME}.${env.BUILT_VERSION}.nupkg \
+                -k ${params.NUGET_PUSH_KEY} \
+                -s https://api.nuget.org/v3/index.json"
+            }   
+        }
+
         stage('Unit Test') {
             steps {
                 sh "${env.COVERLET} ${env.UNIT_TEST_ASSEMBLY} --target 'dotnet' --targetargs 'test . --no-build' --format opencover"
@@ -45,7 +55,7 @@ pipeline {
         stage('End Code Analysis') {
             steps {
                 sh "${env.SONAR_SCANNER} end /d:sonar.login=${params.SONAR_LOGIN_KEY}"
-            }
+            }         
         }        
     }
 }
