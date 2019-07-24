@@ -6,6 +6,7 @@ namespace Onix.Api.Commons
 	{		
 		private readonly String name;
 		private String value;
+		private string dummy = "";
 		
 		public CField(String t, String v, String fldName)
 		{

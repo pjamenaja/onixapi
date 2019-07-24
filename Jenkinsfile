@@ -35,7 +35,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh "dotnet build -c ${env.BUILD_MODE} -p:Version=${env.BUILT_VERSION}"
+                sh "dotnet build -p:Version=${env.BUILT_VERSION}"
             }
         }
 
@@ -52,7 +52,7 @@ pipeline {
 
         stage('Unit Test') {
             steps {
-                sh "dotnet test; ${env.COVERLET} ${env.UNIT_TEST_ASSEMBLY} --target 'dotnet' --targetargs 'test . --no-build' --format opencover"
+                sh "${env.COVERLET} ${env.UNIT_TEST_ASSEMBLY} --target 'dotnet' --targetargs 'test . --no-build' --format opencover"
             }
         } 
 
