@@ -1418,50 +1418,63 @@ FNF:1
 FNH:1
 end_of_record
 SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\AuthenProviders\AuthenProviderFirebase.cs
-FN:10,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::Login(Onix.Api.Commons.CTable)
-FNDA:0,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::Login(Onix.Api.Commons.CTable)
-DA:11,0
-DA:12,0
-DA:13,0
-DA:14,0
-DA:16,0
-DA:17,0
-DA:19,0
-DA:21,0
-DA:23,0
-DA:24,0
-DA:25,0
-DA:26,0
+FN:12,System.Void Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::SetProvider(Firebase.Auth.IFirebaseAuthProvider)
+FNDA:6,System.Void Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::SetProvider(Firebase.Auth.IFirebaseAuthProvider)
+DA:13,6
+DA:14,6
+DA:15,6
+FN:17,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::Login(Onix.Api.Commons.CTable)
+FNDA:6,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::Login(Onix.Api.Commons.CTable)
+DA:18,6
+DA:19,6
+DA:20,6
+DA:21,6
+DA:23,6
+DA:24,6
+DA:26,6
 DA:27,0
-DA:31,0
-DA:32,0
-DA:34,0
-DA:35,0
-BRDA:25,109,0,0
-BRDA:25,109,1,0
-BRDA:25,132,0,0
-BRDA:25,132,1,0
-FN:37,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::CreateAccount(Onix.Api.Commons.CTable)
+DA:28,0
+DA:29,0
+DA:32,6
+DA:34,6
+DA:35,6
+DA:36,6
+DA:37,4
+DA:38,4
+DA:42,2
+DA:43,2
+DA:45,2
+DA:46,2
+BRDA:26,78,0,0
+BRDA:26,78,1,6
+BRDA:36,134,0,5
+BRDA:36,134,1,1
+BRDA:36,157,0,4
+BRDA:36,157,1,2
+FN:48,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::CreateAccount(Onix.Api.Commons.CTable)
 FNDA:0,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::CreateAccount(Onix.Api.Commons.CTable)
-DA:38,0
-DA:39,0
-DA:40,0
-FN:42,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::DeleteAccount(Onix.Api.Commons.CTable)
-FNDA:0,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::DeleteAccount(Onix.Api.Commons.CTable)
-DA:43,0
-DA:44,0
-DA:45,0
-FN:47,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::ChangePassword(Onix.Api.Commons.CTable)
-FNDA:0,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::ChangePassword(Onix.Api.Commons.CTable)
-DA:48,0
 DA:49,0
 DA:50,0
-LF:26
-LH:0
-BRF:4
-BRH:0
-FNF:4
-FNH:0
+DA:51,0
+FN:53,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::DeleteAccount(Onix.Api.Commons.CTable)
+FNDA:0,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::DeleteAccount(Onix.Api.Commons.CTable)
+DA:54,0
+DA:55,0
+DA:56,0
+FN:58,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::ChangePassword(Onix.Api.Commons.CTable)
+FNDA:0,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::ChangePassword(Onix.Api.Commons.CTable)
+DA:59,0
+DA:60,0
+DA:61,0
+FN:9,System.Void Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::.ctor()
+FNDA:8,System.Void Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::.ctor()
+DA:10,8
+LF:33
+LH:21
+BRF:6
+BRH:5
+FNF:6
+FNH:3
 end_of_record
 SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\AuthenProviders\AuthenProviderMocked.cs
 FN:8,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderMocked::Login(Onix.Api.Commons.CTable)
@@ -1504,10 +1517,10 @@ FNH:1
 end_of_record
 SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\CField.cs
 FN:16,System.String Onix.Api.Commons.CField::GetValue()
-FNDA:575408,System.String Onix.Api.Commons.CField::GetValue()
-DA:17,575408
-DA:18,575408
-DA:19,575408
+FNDA:575424,System.String Onix.Api.Commons.CField::GetValue()
+DA:17,575424
+DA:18,575424
+DA:19,575424
 FN:21,System.String Onix.Api.Commons.CField::GetName()
 FNDA:6037,System.String Onix.Api.Commons.CField::GetName()
 DA:22,6037
@@ -1519,12 +1532,12 @@ DA:27,3517
 DA:28,3517
 DA:29,3517
 FN:9,System.Void Onix.Api.Commons.CField::.ctor(System.String,System.String,System.String)
-FNDA:721308,System.Void Onix.Api.Commons.CField::.ctor(System.String,System.String,System.String)
-DA:10,721308
-DA:11,721308
-DA:12,721308
-DA:13,721308
-DA:14,721308
+FNDA:721330,System.Void Onix.Api.Commons.CField::.ctor(System.String,System.String,System.String)
+DA:10,721330
+DA:11,721330
+DA:12,721330
+DA:13,721330
+DA:14,721330
 LF:14
 LH:14
 BRF:0
@@ -1570,26 +1583,26 @@ DA:51,1016
 DA:52,1016
 DA:53,1016
 FN:55,System.Void Onix.Api.Commons.CTable::AddField(System.String,System.String,System.String)
-FNDA:721308,System.Void Onix.Api.Commons.CTable::AddField(System.String,System.String,System.String)
-DA:56,721308
-DA:57,721308
-DA:58,721308
-DA:59,721308
-DA:60,721308
+FNDA:721330,System.Void Onix.Api.Commons.CTable::AddField(System.String,System.String,System.String)
+DA:56,721330
+DA:57,721330
+DA:58,721330
+DA:59,721330
+DA:60,721330
 FN:62,System.Void Onix.Api.Commons.CTable::SetFieldValue(System.String,System.String)
-FNDA:718816,System.Void Onix.Api.Commons.CTable::SetFieldValue(System.String,System.String)
-DA:63,718816
-DA:64,718816
+FNDA:718838,System.Void Onix.Api.Commons.CTable::SetFieldValue(System.String,System.String)
+DA:63,718838
+DA:64,718838
 DA:65,3517
 DA:66,3517
 DA:67,3517
 DA:68,3517
-DA:70,715299
-DA:71,715299
-DA:72,715299
-DA:73,718816
+DA:70,715321
+DA:71,715321
+DA:72,715321
+DA:73,718838
 BRDA:64,15,0,3517
-BRDA:64,15,1,715299
+BRDA:64,15,1,715321
 FN:75,System.Void Onix.Api.Commons.CTable::SetFieldValue(System.String,System.Int32)
 FNDA:196626,System.Void Onix.Api.Commons.CTable::SetFieldValue(System.String,System.Int32)
 DA:76,196626
@@ -1601,16 +1614,16 @@ DA:81,54910
 DA:82,54910
 DA:83,54910
 FN:85,System.String Onix.Api.Commons.CTable::GetFieldValue(System.String)
-FNDA:748680,System.String Onix.Api.Commons.CTable::GetFieldValue(System.String)
-DA:86,748680
-DA:87,748680
-DA:88,569371
-DA:89,569371
-DA:90,569371
-DA:93,179309
-DA:94,748680
-BRDA:87,15,0,569371
-BRDA:87,15,1,179309
+FNDA:748702,System.String Onix.Api.Commons.CTable::GetFieldValue(System.String)
+DA:86,748702
+DA:87,748702
+DA:88,569387
+DA:89,569387
+DA:90,569387
+DA:93,179315
+DA:94,748702
+BRDA:87,15,0,569387
+BRDA:87,15,1,179315
 FN:96,System.Int32 Onix.Api.Commons.CTable::GetFieldValueInt(System.String)
 FNDA:7646,System.Int32 Onix.Api.Commons.CTable::GetFieldValueInt(System.String)
 DA:97,7646
@@ -1656,20 +1669,20 @@ BRDA:129,225,1,2
 BRDA:129,225,0,1
 BRDA:122,259,0,1004
 FN:7,System.Void Onix.Api.Commons.CTable::.ctor(System.String)
-FNDA:85346,System.Void Onix.Api.Commons.CTable::.ctor(System.String)
-DA:8,85346
-DA:9,85346
-DA:11,85346
-DA:12,85346
-DA:14,1053
-DA:15,1053
-DA:16,1053
-DA:17,1053
+FNDA:85358,System.Void Onix.Api.Commons.CTable::.ctor(System.String)
+DA:8,85358
+DA:9,85358
+DA:11,85358
+DA:12,85358
+DA:14,1059
+DA:15,1059
+DA:16,1059
+DA:17,1059
 FN:18,System.Void Onix.Api.Commons.CTable::.ctor()
-FNDA:84293,System.Void Onix.Api.Commons.CTable::.ctor()
-DA:19,84293
-DA:20,84293
-DA:21,84293
+FNDA:84299,System.Void Onix.Api.Commons.CTable::.ctor()
+DA:19,84299
+DA:20,84299
+DA:21,84299
 LF:91
 LH:91
 BRF:14

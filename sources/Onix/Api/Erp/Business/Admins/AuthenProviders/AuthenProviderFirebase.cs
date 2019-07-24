@@ -7,9 +7,9 @@ namespace Onix.Api.Erp.Business.Admins.AuthenProviders
 {
 	public class AuthenProviderFirebase : IAuthenProvider
 	{
-        private FirebaseAuthProvider provider = null;
+        private IFirebaseAuthProvider provider = null;
 
-        public void SetProvider(FirebaseAuthProvider pr)
+        public void SetProvider(IFirebaseAuthProvider pr)
         {
             provider = pr;
         }
