@@ -52,7 +52,7 @@ pipeline {
 
         stage('Unit Test') {
             steps {
-                sh "${env.COVERLET} ${env.UNIT_TEST_ASSEMBLY} --target 'dotnet' --targetargs 'test . --no-build' --format opencover"
+                sh "dotnet test; ${env.COVERLET} ${env.UNIT_TEST_ASSEMBLY} --target 'dotnet' --targetargs 'test . --no-build' --format opencover"
             }
         } 
 

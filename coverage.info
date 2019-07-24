@@ -1873,34 +1873,34 @@ FNF:5
 FNH:4
 end_of_record
 SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationGetSeq.cs
-FN:20,System.Int32 Onix.Api.Commons.ManipulationGetSeq::GetNextValue(System.String)
+FN:15,System.Int32 Onix.Api.Commons.ManipulationGetSeq::GetNextValue(System.String)
 FNDA:0,System.Int32 Onix.Api.Commons.ManipulationGetSeq::GetNextValue(System.String)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:20,0
 DA:21,0
 DA:22,0
+DA:23,0
 DA:24,0
+DA:25,0
 DA:26,0
 DA:27,0
 DA:28,0
 DA:29,0
 DA:30,0
 DA:31,0
-DA:32,0
 DA:33,0
 DA:34,0
-DA:35,0
-DA:36,0
-DA:37,0
-DA:39,0
-DA:40,0
-BRDA:32,81,0,0
-BRDA:32,81,1,0
-FN:12,System.Void Onix.Api.Commons.ManipulationGetSeq::.ctor(Microsoft.EntityFrameworkCore.DbContext)
+BRDA:26,81,0,0
+BRDA:26,81,1,0
+FN:7,System.Void Onix.Api.Commons.ManipulationGetSeq::.ctor(Microsoft.EntityFrameworkCore.DbContext)
 FNDA:1,System.Void Onix.Api.Commons.ManipulationGetSeq::.ctor(Microsoft.EntityFrameworkCore.DbContext)
+DA:8,1
+DA:10,1
+DA:11,1
+DA:12,1
 DA:13,1
-DA:15,1
-DA:16,1
-DA:17,1
-DA:18,1
 LF:22
 LH:5
 BRF:2
