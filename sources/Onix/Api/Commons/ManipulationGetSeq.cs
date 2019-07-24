@@ -1,10 +1,5 @@
-using System.Linq;
 using System;
-using System.Collections;
 using Microsoft.EntityFrameworkCore;
-
-using Onix.Api.Utils;
-using Onix.Api.Erp.Dao.Models;
 
 namespace Onix.Api.Commons
 {
