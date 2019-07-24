@@ -7,6 +7,13 @@ namespace Onix.Api.Erp.Business.Admins.AuthenProviders
 {
 	public class AuthenProviderFirebase : IAuthenProvider
 	{
+        private FirebaseAuthProvider provider = null;
+
+        public void SetProvider(FirebaseAuthProvider pr)
+        {
+            provider = pr;
+        }
+
         public CTable Login(CTable dat)
         {
             string apiKey = dat.GetFieldValue("API_KEY");
@@ -16,7 +23,11 @@ namespace Onix.Api.Erp.Business.Admins.AuthenProviders
             CTable o = new CTable("DATA");
             o.SetFieldValue("USER_ROLE", "DO NOT CHANGE THIS!!!! - THIS ROLE WILL NOT BE ALLOWED FOR ALL");
 
-            var provider = new FirebaseAuthProvider(new FirebaseConfig(apiKey));
+            if (provider == null)
+            {
+                provider = new FirebaseAuthProvider(new FirebaseConfig(apiKey));
+            }
+
             //MUST throw exception if error!!!!
             var auth = provider.SignInWithEmailAndPasswordAsync(userName, password);
 

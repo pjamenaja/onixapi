@@ -8,6 +8,7 @@ pipeline {
     
     environment {
         PRODUCT_NAME = 'OnixApi'
+        PUBLISH_FLAG = 'N'
         BUILT_VERSION = '1.1.1-SNAPSHOT'
         SONAR_SCANNER = '/home/tomcat/.dotnet/tools/dotnet-sonarscanner'
         COVERLET = '/home/tomcat/.dotnet/tools/coverlet'
@@ -39,6 +40,9 @@ pipeline {
         }
 
         stage('Nuget Publish') {
+            when {
+                expression { env.PUBLISH_FLAG == 'Y' }
+            }            
             steps {
                 sh "dotnet nuget push ${env.PACKAGE_PATH}/${env.PRODUCT_NAME}.${env.BUILT_VERSION}.nupkg \
                 -k ${params.NUGET_PUSH_KEY} \
