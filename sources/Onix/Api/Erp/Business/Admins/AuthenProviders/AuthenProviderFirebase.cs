@@ -23,7 +23,6 @@ namespace Onix.Api.Erp.Business.Admins.AuthenProviders
 
         public CTable Login(CTable dat)
         {
-            string apiKey = dat.GetFieldValue("API_KEY");
             string userName = dat.GetFieldValue("USER_NAME");
             string password = dat.GetFieldValue("PASSWORD");
 
