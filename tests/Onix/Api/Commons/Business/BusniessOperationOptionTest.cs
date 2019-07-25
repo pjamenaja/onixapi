@@ -1,9 +1,10 @@
 using System.Collections;
 using NUnit.Framework;
+using Onix.Api.Commons.Business;
 
-namespace Onix.Api.Commons.Business
+namespace Onix.Test.Api.Commons.Business
 {
-    public class BusinessOperationTest
+    public class BusinessOperationOptionTest
     {
         [SetUp]
         public void Setup()

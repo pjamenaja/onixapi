@@ -197,12 +197,7 @@ namespace Onix.Api.Commons
                     if (value != null)
                     {
                         fieldValue = value.ToString();
-                    }
-                    
-                    if (fieldValue == null)
-                    {
-                        fieldValue = "";
-                    }
+                    }                    
                 }
                 t.SetFieldValue(cfg.FieldName, fieldValue);
             }

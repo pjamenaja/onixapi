@@ -1,10 +1,5 @@
-using System.Linq;
 using System;
-using System.Collections;
 using Microsoft.EntityFrameworkCore;
-
-using Onix.Api.Utils;
-using Onix.Api.Erp.Dao.Models;
 
 namespace Onix.Api.Commons
 {
@@ -20,7 +15,6 @@ namespace Onix.Api.Commons
         public virtual int GetNextValue(string seqName)
         {
             int seq = 0;
-
             string sql = String.Format("SELECT NEXTVAL('{0}')", seqName);
 
             using (var command = context.Database.GetDbConnection().CreateCommand())

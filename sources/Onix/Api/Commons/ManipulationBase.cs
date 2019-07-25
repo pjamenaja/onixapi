@@ -13,30 +13,23 @@ namespace Onix.Api.Commons
         public ArrayList FieldConfigs { get; set; }
     }
 
-	public class ManipulationBase : IDatabaseManipulation
+	public abstract class ManipulationBase : IDatabaseManipulation
 	{
         protected DbContext dbContext = null;
         protected ManipulationConfig cfg = new ManipulationConfig();
         protected string pkFieldName = "";
+
+        protected abstract OnixBaseModel createModel();
+        public abstract int Apply(CTable data);
 
         protected DbContext getContext()
         {
             return(dbContext);
         }
 
-        public ManipulationBase(DbContext db)
+        protected ManipulationBase(DbContext db)
         {
             dbContext = db;
-        }
-
-        public virtual int Apply(CTable data)
-        {
-            return(0);
-        }
-
-        protected virtual OnixBaseModel createModel()
-        {
-            return(null);
         }
 
         protected DbSet<T> getDbSet<T>() where T : OnixBaseModel

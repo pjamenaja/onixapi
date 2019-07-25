@@ -1,6 +1,4 @@
 using System;
-using System.Linq;
-using System.Collections.Generic;
 using System.Collections;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,9 +6,11 @@ using Onix.Api.Erp.Dao.Models;
 
 namespace Onix.Api.Commons
 {
-	public class ManipulationDelete : ManipulationBase
+	public abstract class ManipulationDelete : ManipulationBase
 	{
-        public ManipulationDelete(DbContext db) : base(db)
+        protected abstract void deleteData(CTable data);
+
+        protected ManipulationDelete(DbContext db) : base(db)
         {
         }
 
@@ -18,11 +18,6 @@ namespace Onix.Api.Commons
         {
             deleteData(data);
             return(1);
-        }
-
-        protected virtual void deleteData(CTable data)
-        {
-            //Do nothing            
         }
 
         protected void applyDelete<T>(CTable data) where T : OnixBaseModel
@@ -41,11 +36,6 @@ namespace Onix.Api.Commons
 
         protected void setUp(ConfigFields cfgFunc)
         {
-            if (cfgFunc == null)
-            {
-                return;
-            }
-
             ArrayList arr = cfgFunc();
 
             ArrayList tempArr = new ArrayList();

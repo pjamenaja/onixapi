@@ -1,13 +1,13 @@
 using System;
-using System.Collections;
 using Microsoft.EntityFrameworkCore;
-using Onix.Api.Factories;
 
 namespace Onix.Api.Commons.Business
 {
-	public class BusinessOperationBase : IBusinessOperation
+	public abstract class BusinessOperationBase : IBusinessOperation
 	{
         private DbContext context = null;
+
+        protected abstract CTable Execute(CTable dat);
 
         protected DbContext DbContext
         {
@@ -15,11 +15,6 @@ namespace Onix.Api.Commons.Business
             {
                 return context;
             }
-        }
-
-        protected virtual CTable Execute(CTable dat)
-        {
-            return null;
         }
 
         public CTable Apply(CTable dat, DbContext ctx)
