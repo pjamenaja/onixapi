@@ -27,7 +27,7 @@ namespace Onix.Api.Commons
             return(dbContext);
         }
 
-        public ManipulationBase(DbContext db)
+        protected ManipulationBase(DbContext db)
         {
             dbContext = db;
         }

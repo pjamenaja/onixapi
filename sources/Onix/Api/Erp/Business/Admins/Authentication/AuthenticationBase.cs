@@ -9,7 +9,7 @@ namespace Onix.Api.Erp.Business.Admins.Authentication
 	{
         private IAuthenProvider authenProvider = null;
         
-        public AuthenticationBase()
+        protected AuthenticationBase()
         {
             authenProvider = new AuthenProviderFirebase();
         }

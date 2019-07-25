@@ -11,7 +11,7 @@ namespace Onix.Api.Commons
 	{
         protected abstract void updateData(CTable data);
 
-        public ManipulationUpdate(DbContext db) : base(db)
+        protected ManipulationUpdate(DbContext db) : base(db)
         {
         }
 

@@ -10,7 +10,7 @@ namespace Onix.Api.Commons
 	{
         protected abstract void deleteData(CTable data);
 
-        public ManipulationDelete(DbContext db) : base(db)
+        protected ManipulationDelete(DbContext db) : base(db)
         {
         }
 

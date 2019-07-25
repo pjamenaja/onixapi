@@ -10,7 +10,7 @@ namespace Onix.Api.Commons
 	{
         protected abstract void addData(CTable data);
 
-        public ManipulationInsert(DbContext db) : base(db)
+        protected ManipulationInsert(DbContext db) : base(db)
         {
         }
 
