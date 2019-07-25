@@ -50,7 +50,7 @@ namespace Onix.Test.Api.Erp.Business.Admins.AuthenProviders
             IFirebaseAuthProvider provider = getFirebaseProvider(tokenReturned);
 
             AuthenProviderFirebase authen = new AuthenProviderFirebase();
-            authen.SetProvider(provider);                        
+            authen.SetProvider(provider);
 
             try
             {

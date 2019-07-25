@@ -5,7 +5,7 @@ using Onix.Api.Erp.Business.Admins.AuthenProviders;
 
 namespace Onix.Api.Erp.Business.Admins.Authentication
 {    
-	public class AuthenticationBase : BusinessOperationBase
+	public abstract class AuthenticationBase : BusinessOperationBase
 	{
         private IAuthenProvider authenProvider = null;
         

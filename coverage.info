@@ -1,4 +1,4 @@
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\BusinessOperationUtils.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\BusinessOperationUtils.cs
 FN:11,System.Void Onix.Api.Utils.BusinessOperationUtils::PopulateRow(Onix.Api.Commons.IDatabaseQuery,Onix.Api.Commons.CTable,System.String,System.Collections.ArrayList)
 FNDA:2,System.Void Onix.Api.Utils.BusinessOperationUtils::PopulateRow(Onix.Api.Commons.IDatabaseQuery,Onix.Api.Commons.CTable,System.String,System.Collections.ArrayList)
 DA:12,2
@@ -13,7 +13,7 @@ BRH:0
 FNF:1
 FNH:1
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\DateUtils.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\DateUtils.cs
 FN:7,System.String Onix.Api.Utils.DateUtils::DateTimeToDateStringInternalMin(System.Nullable`1<System.DateTime>)
 FNDA:12,System.String Onix.Api.Utils.DateUtils::DateTimeToDateStringInternalMin(System.Nullable`1<System.DateTime>)
 DA:8,12
@@ -75,7 +75,7 @@ BRH:8
 FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\FilterFunctionUtils.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\FilterFunctionUtils.cs
 FN:12,System.String Onix.Api.Utils.FilterFunctionUtils::GetCurrentDateTimeStr(System.String)
 FNDA:111370,System.String Onix.Api.Utils.FilterFunctionUtils::GetCurrentDateTimeStr(System.String)
 DA:13,111370
@@ -124,12 +124,12 @@ BRH:6
 FNF:5
 FNH:5
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\LibSetting.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\LibSetting.cs
 FN:28,Onix.Api.Utils.LibSetting Onix.Api.Utils.LibSetting::GetInstance()
-FNDA:10,Onix.Api.Utils.LibSetting Onix.Api.Utils.LibSetting::GetInstance()
-DA:29,10
-DA:30,10
-DA:31,10
+FNDA:22,Onix.Api.Utils.LibSetting Onix.Api.Utils.LibSetting::GetInstance()
+DA:29,22
+DA:30,22
+DA:31,22
 FN:35,System.Void Onix.Api.Utils.LibSetting::set_Configuration(Microsoft.Extensions.Configuration.IConfigurationRoot)
 FNDA:2,System.Void Onix.Api.Utils.LibSetting::set_Configuration(Microsoft.Extensions.Configuration.IConfigurationRoot)
 DA:36,2
@@ -179,10 +179,10 @@ DA:92,1
 DA:93,1
 DA:94,1
 FN:96,System.String Onix.Api.Utils.LibSetting::get_ExternalApplicationKey()
-FNDA:10,System.String Onix.Api.Utils.LibSetting::get_ExternalApplicationKey()
-DA:97,10
-DA:98,10
-DA:99,10
+FNDA:22,System.String Onix.Api.Utils.LibSetting::get_ExternalApplicationKey()
+DA:97,22
+DA:98,22
+DA:99,22
 FN:11,System.Void Onix.Api.Utils.LibSetting::.ctor()
 FNDA:1,System.Void Onix.Api.Utils.LibSetting::.ctor()
 DA:12,1
@@ -210,7 +210,7 @@ BRH:2
 FNF:13
 FNH:13
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\VersionUtils.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\VersionUtils.cs
 FN:8,System.String Onix.Api.Utils.VersionUtils::GetVersion()
 FNDA:1,System.String Onix.Api.Utils.VersionUtils::GetVersion()
 DA:9,1
@@ -224,7 +224,7 @@ BRH:0
 FNF:1
 FNH:1
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\Serializers\CRoot.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\Serializers\CRoot.cs
 FN:21,Onix.Api.Commons.CTable Onix.Api.Utils.Serializers.CRoot::get_Param()
 FNDA:13,Onix.Api.Commons.CTable Onix.Api.Utils.Serializers.CRoot::get_Param()
 DA:22,13
@@ -261,7 +261,7 @@ BRH:0
 FNF:5
 FNH:5
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\Serializers\CTableToXml.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\Serializers\CTableToXml.cs
 FN:18,System.String Onix.Api.Utils.Serializers.CTableToXml::Serialize()
 FNDA:4,System.String Onix.Api.Utils.Serializers.CTableToXml::Serialize()
 DA:19,4
@@ -332,7 +332,7 @@ BRH:6
 FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\Serializers\XmlToCTable.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Utils\Serializers\XmlToCTable.cs
 FN:18,Onix.Api.Utils.Serializers.CRoot Onix.Api.Utils.Serializers.XmlToCTable::Deserialize()
 FNDA:13,Onix.Api.Utils.Serializers.CRoot Onix.Api.Utils.Serializers.XmlToCTable::Deserialize()
 DA:19,13
@@ -437,7 +437,7 @@ BRH:16
 FNF:5
 FNH:5
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Factories\FactoryBusinessOperation.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Factories\FactoryBusinessOperation.cs
 FN:13,System.Void Onix.Api.Factories.FactoryBusinessOperation::addClassConfig(System.String,System.String,Onix.Api.Commons.Business.BusinessOperationOption)
 FNDA:4,System.Void Onix.Api.Factories.FactoryBusinessOperation::addClassConfig(System.String,System.String,Onix.Api.Commons.Business.BusinessOperationOption)
 DA:14,4
@@ -487,7 +487,7 @@ BRH:2
 FNF:5
 FNH:5
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Factories\FactoryDbContext.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Factories\FactoryDbContext.cs
 FN:13,System.Collections.Hashtable Onix.Api.Factories.FactoryDbContext::initContextMap()
 FNDA:1,System.Collections.Hashtable Onix.Api.Factories.FactoryDbContext::initContextMap()
 DA:14,1
@@ -519,20 +519,20 @@ BRDA:25,11,1,0
 BRDA:31,48,0,0
 BRDA:31,48,1,0
 FN:44,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Factories.FactoryDbContext::GetDbContextForTesting(System.String,Microsoft.EntityFrameworkCore.DbContextOptions)
-FNDA:89,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Factories.FactoryDbContext::GetDbContextForTesting(System.String,Microsoft.EntityFrameworkCore.DbContextOptions)
-DA:45,89
-DA:48,89
+FNDA:95,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Factories.FactoryDbContext::GetDbContextForTesting(System.String,Microsoft.EntityFrameworkCore.DbContextOptions)
+DA:45,95
+DA:48,95
 DA:49,1
 DA:50,1
 DA:51,1
-DA:53,89
-DA:54,89
-DA:55,89
-DA:56,89
-DA:58,89
-DA:59,89
+DA:53,95
+DA:54,95
+DA:55,95
+DA:56,95
+DA:58,95
+DA:59,95
 BRDA:48,11,0,1
-BRDA:48,11,1,89
+BRDA:48,11,1,95
 FN:9,System.Void Onix.Api.Factories.FactoryDbContext::.cctor()
 FNDA:1,System.Void Onix.Api.Factories.FactoryDbContext::.cctor()
 DA:10,1
@@ -544,7 +544,7 @@ BRH:2
 FNF:4
 FNH:3
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Factories\FactoryDbOperation.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Factories\FactoryDbOperation.cs
 FN:14,System.Void Onix.Api.Factories.FactoryDbOperation::initQueryClassMap()
 FNDA:1,System.Void Onix.Api.Factories.FactoryDbOperation::initQueryClassMap()
 DA:15,1
@@ -602,7 +602,7 @@ BRH:0
 FNF:6
 FNH:6
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\MnplAddUnitTesting.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\MnplAddUnitTesting.cs
 FN:20,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.UnitTesting.MnplAddUnitTesting::createModel()
 FNDA:54358,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.UnitTesting.MnplAddUnitTesting::createModel()
 DA:21,54358
@@ -644,7 +644,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\MnplDeleteByIdUnitTesting.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\MnplDeleteByIdUnitTesting.cs
 FN:20,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.UnitTesting.MnplDeleteByIdUnitTesting::createModel()
 FNDA:3503,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.UnitTesting.MnplDeleteByIdUnitTesting::createModel()
 DA:21,3503
@@ -676,7 +676,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\QueryUnitTestingGeneric.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\QueryUnitTestingGeneric.cs
 FN:23,System.Collections.ArrayList Onix.Api.Erp.Dao.Queries.UnitTesting.QueryUnitTestingGeneric::configGenericQuery()
 FNDA:76,System.Collections.ArrayList Onix.Api.Erp.Dao.Queries.UnitTesting.QueryUnitTestingGeneric::configGenericQuery()
 DA:24,76
@@ -738,7 +738,7 @@ BRH:2
 FNF:5
 FNH:5
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\Updates\MnplUpdateAllFieldsUnitTesting.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\Updates\MnplUpdateAllFieldsUnitTesting.cs
 FN:13,System.Collections.ArrayList Onix.Api.Erp.Dao.Queries.UnitTesting.MnplUpdateAllFieldsUnitTesting::configEditUnitTesting()
 FNDA:1,System.Collections.ArrayList Onix.Api.Erp.Dao.Queries.UnitTesting.MnplUpdateAllFieldsUnitTesting::configEditUnitTesting()
 DA:14,1
@@ -767,7 +767,7 @@ BRH:0
 FNF:2
 FNH:2
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\Updates\MnplUpdateCommonTesting.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\Updates\MnplUpdateCommonTesting.cs
 FN:13,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.UnitTesting.MnplUpdateCommonTesting::createModel()
 FNDA:2002,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.UnitTesting.MnplUpdateCommonTesting::createModel()
 DA:14,2002
@@ -791,7 +791,7 @@ BRH:0
 FNF:3
 FNH:3
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\Updates\MnplUpdateOnlyField1Testing.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\Updates\MnplUpdateOnlyField1Testing.cs
 FN:13,System.Collections.ArrayList Onix.Api.Erp.Dao.Queries.UnitTesting.MnplUpdateOnlyField1Testing::configEditUnitTesting()
 FNDA:1,System.Collections.ArrayList Onix.Api.Erp.Dao.Queries.UnitTesting.MnplUpdateOnlyField1Testing::configEditUnitTesting()
 DA:14,1
@@ -813,7 +813,7 @@ BRH:0
 FNF:2
 FNH:2
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\ViewUnitTesting.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\UnitTesting\ViewUnitTesting.cs
 FN:9,Onix.Api.Erp.Dao.Models.UnitTesting.MUnitTesting Onix.Api.Erp.Dao.Queries.UnitTesting.ViewUnitTesting::get_UT()
 FNDA:210050,Onix.Api.Erp.Dao.Models.UnitTesting.MUnitTesting Onix.Api.Erp.Dao.Queries.UnitTesting.ViewUnitTesting::get_UT()
 DA:10,210050
@@ -824,7 +824,7 @@ BRH:0
 FNF:1
 FNH:1
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\MnplAddEmployee.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\MnplAddEmployee.cs
 FN:19,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.Employees.MnplAddEmployee::createModel()
 FNDA:1327,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.Employees.MnplAddEmployee::createModel()
 DA:20,1327
@@ -864,7 +864,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\MnplDeleteEmployee.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\MnplDeleteEmployee.cs
 FN:19,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.Employees.MnplDeleteEmployee::createModel()
 FNDA:2,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.Employees.MnplDeleteEmployee::createModel()
 DA:20,2
@@ -896,7 +896,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\MnplUpdateEmployee.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\MnplUpdateEmployee.cs
 FN:19,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.Employees.MnplUpdateEmployee::createModel()
 FNDA:2,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Erp.Dao.Queries.Employees.MnplUpdateEmployee::createModel()
 DA:20,2
@@ -935,7 +935,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\QueryEmployeeGetInfo.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\QueryEmployeeGetInfo.cs
 FN:22,System.Collections.ArrayList Onix.Api.Erp.Dao.Queries.Employees.QueryEmployeeGetInfo::configGetInfo()
 FNDA:1,System.Collections.ArrayList Onix.Api.Erp.Dao.Queries.Employees.QueryEmployeeGetInfo::configGetInfo()
 DA:23,1
@@ -997,7 +997,7 @@ BRH:2
 FNF:5
 FNH:5
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\QueryEmployeeGetList.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\QueryEmployeeGetList.cs
 FN:23,System.Collections.ArrayList Onix.Api.Erp.Dao.Queries.Employees.QueryEmployeeGetList::configGetList()
 FNDA:15,System.Collections.ArrayList Onix.Api.Erp.Dao.Queries.Employees.QueryEmployeeGetList::configGetList()
 DA:24,15
@@ -1063,7 +1063,7 @@ BRH:2
 FNF:5
 FNH:5
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\ViewEmployee.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Queries\Employees\ViewEmployee.cs
 FN:13,Onix.Api.Erp.Dao.Models.MEmployee Onix.Api.Erp.Dao.Queries.Employees.ViewEmployee::get_EM()
 FNDA:6723,Onix.Api.Erp.Dao.Models.MEmployee Onix.Api.Erp.Dao.Queries.Employees.ViewEmployee::get_EM()
 DA:14,6723
@@ -1077,7 +1077,7 @@ BRH:0
 FNF:2
 FNH:2
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\Generals\MMasterRef.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\Generals\MMasterRef.cs
 FN:16,System.Int32 Onix.Api.Erp.Dao.Models.MMasterRef::get_MasterId()
 FNDA:6549,System.Int32 Onix.Api.Erp.Dao.Models.MMasterRef::get_MasterId()
 DA:17,6549
@@ -1111,7 +1111,7 @@ BRH:0
 FNF:8
 FNH:8
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\HumanResources\MEmployee.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\HumanResources\MEmployee.cs
 FN:16,System.Int32 Onix.Api.Erp.Dao.Models.MEmployee::get_EmployeeId()
 FNDA:20376,System.Int32 Onix.Api.Erp.Dao.Models.MEmployee::get_EmployeeId()
 DA:17,20376
@@ -1217,7 +1217,7 @@ BRH:0
 FNF:32
 FNH:32
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\OnixBaseModel.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\OnixBaseModel.cs
 FN:14,System.String Onix.Api.Erp.Dao.Models.OnixBaseModel::get_CreateDate()
 FNDA:909547,System.String Onix.Api.Erp.Dao.Models.OnixBaseModel::get_CreateDate()
 DA:15,909547
@@ -1236,7 +1236,7 @@ BRH:0
 FNF:3
 FNH:3
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\OnixDbContext.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\OnixDbContext.cs
 FN:22,System.Void Onix.Api.Erp.Dao.Models.OnixDbContext::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
 FNDA:16,System.Void Onix.Api.Erp.Dao.Models.OnixDbContext::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
 DA:23,16
@@ -1274,23 +1274,23 @@ BRH:1
 FNF:5
 FNH:5
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\UnitTestings\DbContextUnitTesting.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\UnitTestings\DbContextUnitTesting.cs
 FN:17,Microsoft.EntityFrameworkCore.DbSet`1<Onix.Api.Erp.Dao.Models.UnitTesting.MUnitTesting> Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::get_UnitTestingTable()
-FNDA:149,Microsoft.EntityFrameworkCore.DbSet`1<Onix.Api.Erp.Dao.Models.UnitTesting.MUnitTesting> Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::get_UnitTestingTable()
-DA:18,149
+FNDA:155,Microsoft.EntityFrameworkCore.DbSet`1<Onix.Api.Erp.Dao.Models.UnitTesting.MUnitTesting> Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::get_UnitTestingTable()
+DA:18,155
 FN:20,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
-FNDA:73,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
-DA:21,73
-DA:23,73
+FNDA:79,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)
+DA:21,79
+DA:23,79
 FN:25,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
 FNDA:1,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
 DA:26,1
 DA:28,1
 FN:13,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<Microsoft.EntityFrameworkCore.DbContext>)
-FNDA:73,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<Microsoft.EntityFrameworkCore.DbContext>)
-DA:14,73
-DA:15,73
-DA:16,73
+FNDA:79,System.Void Onix.Api.Erp.Dao.Models.UnitTesting.DbContextUnitTesting::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<Microsoft.EntityFrameworkCore.DbContext>)
+DA:14,79
+DA:15,79
+DA:16,79
 LF:8
 LH:8
 BRF:0
@@ -1298,7 +1298,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\UnitTestings\MUnitTesting.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Dao\Models\UnitTestings\MUnitTesting.cs
 FN:13,System.Int32 Onix.Api.Erp.Dao.Models.UnitTesting.MUnitTesting::get_PrimaryKeyId()
 FNDA:1885075,System.Int32 Onix.Api.Erp.Dao.Models.UnitTesting.MUnitTesting::get_PrimaryKeyId()
 DA:14,1885075
@@ -1344,7 +1344,7 @@ BRH:0
 FNF:12
 FNH:12
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\HumanResources\Employees\GetEmployeeList.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\HumanResources\Employees\GetEmployeeList.cs
 FN:13,Onix.Api.Commons.CTable Onix.Api.Erp.Business.HumanResources.Employees.GetEmployeeList::Execute(Onix.Api.Commons.CTable)
 FNDA:2,Onix.Api.Commons.CTable Onix.Api.Erp.Business.HumanResources.Employees.GetEmployeeList::Execute(Onix.Api.Commons.CTable)
 DA:14,2
@@ -1361,24 +1361,24 @@ BRH:0
 FNF:1
 FNH:1
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\Authentication\AuthenticationBase.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\Authentication\AuthenticationBase.cs
 FN:17,Onix.Api.Erp.Business.Admins.AuthenProviders.IAuthenProvider Onix.Api.Erp.Business.Admins.Authentication.AuthenticationBase::getAuthenticationProvider()
-FNDA:2,Onix.Api.Erp.Business.Admins.AuthenProviders.IAuthenProvider Onix.Api.Erp.Business.Admins.Authentication.AuthenticationBase::getAuthenticationProvider()
-DA:18,2
-DA:19,2
-DA:20,2
+FNDA:8,Onix.Api.Erp.Business.Admins.AuthenProviders.IAuthenProvider Onix.Api.Erp.Business.Admins.Authentication.AuthenticationBase::getAuthenticationProvider()
+DA:18,8
+DA:19,8
+DA:20,8
 FN:22,System.Void Onix.Api.Erp.Business.Admins.Authentication.AuthenticationBase::SetAuthenticationProvider(Onix.Api.Erp.Business.Admins.AuthenProviders.IAuthenProvider)
-FNDA:2,System.Void Onix.Api.Erp.Business.Admins.Authentication.AuthenticationBase::SetAuthenticationProvider(Onix.Api.Erp.Business.Admins.AuthenProviders.IAuthenProvider)
-DA:23,2
-DA:24,2
-DA:25,2
+FNDA:8,System.Void Onix.Api.Erp.Business.Admins.Authentication.AuthenticationBase::SetAuthenticationProvider(Onix.Api.Erp.Business.Admins.AuthenProviders.IAuthenProvider)
+DA:23,8
+DA:24,8
+DA:25,8
 FN:9,System.Void Onix.Api.Erp.Business.Admins.Authentication.AuthenticationBase::.ctor()
-FNDA:2,System.Void Onix.Api.Erp.Business.Admins.Authentication.AuthenticationBase::.ctor()
-DA:10,2
-DA:12,2
-DA:13,2
-DA:14,2
-DA:15,2
+FNDA:8,System.Void Onix.Api.Erp.Business.Admins.Authentication.AuthenticationBase::.ctor()
+DA:10,8
+DA:12,8
+DA:13,8
+DA:14,8
+DA:15,8
 LF:11
 LH:11
 BRF:0
@@ -1386,22 +1386,22 @@ BRH:0
 FNF:3
 FNH:3
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\Authentication\Logon.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\Authentication\Logon.cs
 FN:9,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.Authentication.Logon::Execute(Onix.Api.Commons.CTable)
-FNDA:0,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.Authentication.Logon::Execute(Onix.Api.Commons.CTable)
-DA:10,0
-DA:11,0
-DA:14,0
-DA:16,0
-DA:17,0
+FNDA:6,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.Authentication.Logon::Execute(Onix.Api.Commons.CTable)
+DA:10,6
+DA:11,6
+DA:14,2
+DA:16,2
+DA:17,2
 LF:5
-LH:0
+LH:5
 BRF:0
 BRH:0
 FNF:1
-FNH:0
+FNH:1
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\Authentication\MockedLogon.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\Authentication\MockedLogon.cs
 FN:10,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.Authentication.MockedLogon::Execute(Onix.Api.Commons.CTable)
 FNDA:2,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.Authentication.MockedLogon::Execute(Onix.Api.Commons.CTable)
 DA:11,2
@@ -1417,65 +1417,64 @@ BRH:0
 FNF:1
 FNH:1
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\AuthenProviders\AuthenProviderFirebase.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\AuthenProviders\AuthenProviderFirebase.cs
 FN:13,System.Void Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::SetProvider(Firebase.Auth.IFirebaseAuthProvider)
-FNDA:6,System.Void Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::SetProvider(Firebase.Auth.IFirebaseAuthProvider)
-DA:14,6
-DA:15,6
-DA:16,6
+FNDA:12,System.Void Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::SetProvider(Firebase.Auth.IFirebaseAuthProvider)
+DA:14,12
+DA:15,12
+DA:16,12
 FN:24,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::Login(Onix.Api.Commons.CTable)
-FNDA:6,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::Login(Onix.Api.Commons.CTable)
-DA:25,6
-DA:26,6
-DA:27,6
-DA:28,6
-DA:30,6
-DA:31,6
-DA:34,6
-DA:36,6
-DA:37,6
-DA:38,6
-DA:39,4
-DA:40,4
-DA:44,2
-DA:45,2
-DA:47,2
-DA:48,2
-BRDA:38,100,0,5
-BRDA:38,100,1,1
-BRDA:38,123,0,4
-BRDA:38,123,1,2
-FN:50,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::CreateAccount(Onix.Api.Commons.CTable)
+FNDA:12,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::Login(Onix.Api.Commons.CTable)
+DA:25,12
+DA:26,12
+DA:27,12
+DA:29,12
+DA:30,12
+DA:33,12
+DA:35,12
+DA:36,12
+DA:37,12
+DA:38,8
+DA:39,8
+DA:43,4
+DA:44,4
+DA:46,4
+DA:47,4
+BRDA:37,86,0,10
+BRDA:37,86,1,2
+BRDA:37,109,0,8
+BRDA:37,109,1,4
+FN:49,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::CreateAccount(Onix.Api.Commons.CTable)
 FNDA:0,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::CreateAccount(Onix.Api.Commons.CTable)
+DA:50,0
 DA:51,0
 DA:52,0
-DA:53,0
-FN:55,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::DeleteAccount(Onix.Api.Commons.CTable)
+FN:54,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::DeleteAccount(Onix.Api.Commons.CTable)
 FNDA:0,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::DeleteAccount(Onix.Api.Commons.CTable)
+DA:55,0
 DA:56,0
 DA:57,0
-DA:58,0
-FN:60,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::ChangePassword(Onix.Api.Commons.CTable)
+FN:59,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::ChangePassword(Onix.Api.Commons.CTable)
 FNDA:0,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::ChangePassword(Onix.Api.Commons.CTable)
+DA:60,0
 DA:61,0
 DA:62,0
-DA:63,0
 FN:10,System.Void Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::.ctor()
-FNDA:8,System.Void Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::.ctor()
-DA:11,8
-DA:18,8
-DA:19,8
-DA:20,8
-DA:21,8
-DA:22,8
-LF:34
-LH:25
+FNDA:20,System.Void Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderFirebase::.ctor()
+DA:11,20
+DA:18,20
+DA:19,20
+DA:20,20
+DA:21,20
+DA:22,20
+LF:33
+LH:24
 BRF:4
 BRH:4
 FNF:6
 FNH:3
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\AuthenProviders\AuthenProviderMocked.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Erp\Business\Admins\AuthenProviders\AuthenProviderMocked.cs
 FN:8,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderMocked::Login(Onix.Api.Commons.CTable)
 FNDA:2,Onix.Api.Commons.CTable Onix.Api.Erp.Business.Admins.AuthenProviders.AuthenProviderMocked::Login(Onix.Api.Commons.CTable)
 DA:9,2
@@ -1514,29 +1513,29 @@ BRH:2
 FNF:4
 FNH:1
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\CField.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\CField.cs
 FN:16,System.String Onix.Api.Commons.CField::GetValue()
-FNDA:575424,System.String Onix.Api.Commons.CField::GetValue()
-DA:17,575424
-DA:18,575424
-DA:19,575424
+FNDA:575440,System.String Onix.Api.Commons.CField::GetValue()
+DA:17,575440
+DA:18,575440
+DA:19,575440
 FN:21,System.String Onix.Api.Commons.CField::GetName()
 FNDA:6037,System.String Onix.Api.Commons.CField::GetName()
 DA:22,6037
 DA:23,6037
 DA:24,6037
 FN:26,System.Void Onix.Api.Commons.CField::SetValue(System.String)
-FNDA:3517,System.Void Onix.Api.Commons.CField::SetValue(System.String)
-DA:27,3517
-DA:28,3517
-DA:29,3517
+FNDA:3519,System.Void Onix.Api.Commons.CField::SetValue(System.String)
+DA:27,3519
+DA:28,3519
+DA:29,3519
 FN:9,System.Void Onix.Api.Commons.CField::.ctor(System.String,System.String,System.String)
-FNDA:721330,System.Void Onix.Api.Commons.CField::.ctor(System.String,System.String,System.String)
-DA:10,721330
-DA:11,721330
-DA:12,721330
-DA:13,721330
-DA:14,721330
+FNDA:721352,System.Void Onix.Api.Commons.CField::.ctor(System.String,System.String,System.String)
+DA:10,721352
+DA:11,721352
+DA:12,721352
+DA:13,721352
+DA:14,721352
 LF:14
 LH:14
 BRF:0
@@ -1544,7 +1543,7 @@ BRH:0
 FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\CTable.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\CTable.cs
 FN:23,System.Void Onix.Api.Commons.CTable::DumpFields()
 FNDA:1,System.Void Onix.Api.Commons.CTable::DumpFields()
 DA:24,1
@@ -1582,26 +1581,26 @@ DA:51,1016
 DA:52,1016
 DA:53,1016
 FN:55,System.Void Onix.Api.Commons.CTable::AddField(System.String,System.String,System.String)
-FNDA:721330,System.Void Onix.Api.Commons.CTable::AddField(System.String,System.String,System.String)
-DA:56,721330
-DA:57,721330
-DA:58,721330
-DA:59,721330
-DA:60,721330
+FNDA:721352,System.Void Onix.Api.Commons.CTable::AddField(System.String,System.String,System.String)
+DA:56,721352
+DA:57,721352
+DA:58,721352
+DA:59,721352
+DA:60,721352
 FN:62,System.Void Onix.Api.Commons.CTable::SetFieldValue(System.String,System.String)
-FNDA:718838,System.Void Onix.Api.Commons.CTable::SetFieldValue(System.String,System.String)
-DA:63,718838
-DA:64,718838
-DA:65,3517
-DA:66,3517
-DA:67,3517
-DA:68,3517
-DA:70,715321
-DA:71,715321
-DA:72,715321
-DA:73,718838
-BRDA:64,15,0,3517
-BRDA:64,15,1,715321
+FNDA:718862,System.Void Onix.Api.Commons.CTable::SetFieldValue(System.String,System.String)
+DA:63,718862
+DA:64,718862
+DA:65,3519
+DA:66,3519
+DA:67,3519
+DA:68,3519
+DA:70,715343
+DA:71,715343
+DA:72,715343
+DA:73,718862
+BRDA:64,15,0,3519
+BRDA:64,15,1,715343
 FN:75,System.Void Onix.Api.Commons.CTable::SetFieldValue(System.String,System.Int32)
 FNDA:196626,System.Void Onix.Api.Commons.CTable::SetFieldValue(System.String,System.Int32)
 DA:76,196626
@@ -1613,16 +1612,16 @@ DA:81,54910
 DA:82,54910
 DA:83,54910
 FN:85,System.String Onix.Api.Commons.CTable::GetFieldValue(System.String)
-FNDA:748702,System.String Onix.Api.Commons.CTable::GetFieldValue(System.String)
-DA:86,748702
-DA:87,748702
-DA:88,569387
-DA:89,569387
-DA:90,569387
-DA:93,179315
-DA:94,748702
-BRDA:87,15,0,569387
-BRDA:87,15,1,179315
+FNDA:748712,System.String Onix.Api.Commons.CTable::GetFieldValue(System.String)
+DA:86,748712
+DA:87,748712
+DA:88,569403
+DA:89,569403
+DA:90,569403
+DA:93,179309
+DA:94,748712
+BRDA:87,15,0,569403
+BRDA:87,15,1,179309
 FN:96,System.Int32 Onix.Api.Commons.CTable::GetFieldValueInt(System.String)
 FNDA:7646,System.Int32 Onix.Api.Commons.CTable::GetFieldValueInt(System.String)
 DA:97,7646
@@ -1668,20 +1667,20 @@ BRDA:129,225,1,2
 BRDA:129,225,0,1
 BRDA:122,259,0,1004
 FN:7,System.Void Onix.Api.Commons.CTable::.ctor(System.String)
-FNDA:85358,System.Void Onix.Api.Commons.CTable::.ctor(System.String)
-DA:8,85358
-DA:9,85358
-DA:11,85358
-DA:12,85358
-DA:14,1059
-DA:15,1059
-DA:16,1059
-DA:17,1059
+FNDA:85370,System.Void Onix.Api.Commons.CTable::.ctor(System.String)
+DA:8,85370
+DA:9,85370
+DA:11,85370
+DA:12,85370
+DA:14,1065
+DA:15,1065
+DA:16,1065
+DA:17,1065
 FN:18,System.Void Onix.Api.Commons.CTable::.ctor()
-FNDA:84299,System.Void Onix.Api.Commons.CTable::.ctor()
-DA:19,84299
-DA:20,84299
-DA:21,84299
+FNDA:84305,System.Void Onix.Api.Commons.CTable::.ctor()
+DA:19,84305
+DA:20,84305
+DA:21,84305
 LF:91
 LH:91
 BRF:14
@@ -1689,189 +1688,170 @@ BRH:14
 FNF:16
 FNH:16
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationBase.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationBase.cs
 FN:12,System.Collections.ArrayList Onix.Api.Commons.ManipulationConfig::get_FieldConfigs()
 FNDA:63294,System.Collections.ArrayList Onix.Api.Commons.ManipulationConfig::get_FieldConfigs()
 DA:13,63294
-FN:22,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Commons.ManipulationBase::getContext()
+FN:25,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Commons.ManipulationBase::getContext()
 FNDA:122388,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Commons.ManipulationBase::getContext()
-DA:23,122388
-DA:24,122388
-DA:25,122388
-FN:32,System.Int32 Onix.Api.Commons.ManipulationBase::Apply(Onix.Api.Commons.CTable)
-FNDA:0,System.Int32 Onix.Api.Commons.ManipulationBase::Apply(Onix.Api.Commons.CTable)
-DA:33,0
-DA:34,0
-DA:35,0
-FN:37,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Commons.ManipulationBase::createModel()
-FNDA:0,Onix.Api.Erp.Dao.Models.OnixBaseModel Onix.Api.Commons.ManipulationBase::createModel()
-DA:38,0
-DA:39,0
-DA:40,0
-FN:42,Microsoft.EntityFrameworkCore.DbSet`1<T> Onix.Api.Commons.ManipulationBase::getDbSet()
+DA:26,122388
+DA:27,122388
+DA:28,122388
+FN:35,Microsoft.EntityFrameworkCore.DbSet`1<T> Onix.Api.Commons.ManipulationBase::getDbSet()
 FNDA:61194,Microsoft.EntityFrameworkCore.DbSet`1<T> Onix.Api.Commons.ManipulationBase::getDbSet()
-DA:43,61194
-DA:44,61194
-DA:45,61194
-DA:46,61194
-DA:47,61194
-FN:49,System.Void Onix.Api.Commons.ManipulationBase::populatePkProperty(Onix.Api.Erp.Dao.Models.OnixBaseModel,Onix.Api.Commons.CTable)
+DA:36,61194
+DA:37,61194
+DA:38,61194
+DA:39,61194
+DA:40,61194
+FN:42,System.Void Onix.Api.Commons.ManipulationBase::populatePkProperty(Onix.Api.Erp.Dao.Models.OnixBaseModel,Onix.Api.Commons.CTable)
 FNDA:2004,System.Void Onix.Api.Commons.ManipulationBase::populatePkProperty(Onix.Api.Erp.Dao.Models.OnixBaseModel,Onix.Api.Commons.CTable)
-DA:50,2004
-DA:51,32074
-DA:52,13031
-DA:53,13031
-DA:54,11027
-DA:55,11027
-DA:60,2004
-DA:61,2004
-DA:62,2004
-DA:63,2004
-DA:64,2004
-BRDA:51,120,1,13031
-BRDA:53,58,0,11027
-BRDA:53,58,1,2004
-BRDA:51,120,0,2004
-FN:66,System.Void Onix.Api.Commons.ManipulationBase::populateProperties(Onix.Api.Erp.Dao.Models.OnixBaseModel,Onix.Api.Commons.CTable)
+DA:43,2004
+DA:44,32074
+DA:45,13031
+DA:46,13031
+DA:47,11027
+DA:48,11027
+DA:53,2004
+DA:54,2004
+DA:55,2004
+DA:56,2004
+DA:57,2004
+BRDA:44,120,1,13031
+BRDA:46,58,0,11027
+BRDA:46,58,1,2004
+BRDA:44,120,0,2004
+FN:59,System.Void Onix.Api.Commons.ManipulationBase::populateProperties(Onix.Api.Erp.Dao.Models.OnixBaseModel,Onix.Api.Commons.CTable)
 FNDA:61194,System.Void Onix.Api.Commons.ManipulationBase::populateProperties(Onix.Api.Erp.Dao.Models.OnixBaseModel,Onix.Api.Commons.CTable)
-DA:67,61194
-DA:68,1659156
-DA:69,737787
-DA:70,737787
-DA:71,737787
-DA:73,737787
-DA:74,737787
-DA:75,737787
-DA:76,228598
-DA:77,228598
-DA:78,199608
-DA:79,199608
-DA:80,199608
-DA:81,228598
-DA:82,509189
-DA:83,108716
-DA:84,108716
-DA:85,54358
-DA:86,54358
-DA:87,54358
-DA:88,108716
-DA:90,400473
-DA:91,400473
-DA:92,400473
-DA:93,737787
-DA:94,61194
-BRDA:68,277,1,737787
-BRDA:75,106,0,621234
-BRDA:75,106,1,116553
-BRDA:75,132,0,228598
-BRDA:77,148,0,199608
-BRDA:77,148,1,228598
-BRDA:75,132,1,509189
-BRDA:82,191,0,454831
-BRDA:82,191,1,54358
-BRDA:82,217,0,108716
-BRDA:84,233,0,54358
-BRDA:84,233,1,108716
-BRDA:82,217,1,400473
-BRDA:68,277,0,61194
-FN:96,System.Collections.ArrayList Onix.Api.Commons.ManipulationBase::setUpFieldConfigs(System.Collections.ArrayList)
+DA:60,61194
+DA:61,1659156
+DA:62,737787
+DA:63,737787
+DA:64,737787
+DA:66,737787
+DA:67,737787
+DA:68,737787
+DA:69,228598
+DA:70,228598
+DA:71,199608
+DA:72,199608
+DA:73,199608
+DA:74,228598
+DA:75,509189
+DA:76,108716
+DA:77,108716
+DA:78,54358
+DA:79,54358
+DA:80,54358
+DA:81,108716
+DA:83,400473
+DA:84,400473
+DA:85,400473
+DA:86,737787
+DA:87,61194
+BRDA:61,277,1,737787
+BRDA:68,106,0,621234
+BRDA:68,106,1,116553
+BRDA:68,132,0,228598
+BRDA:70,148,0,199608
+BRDA:70,148,1,228598
+BRDA:68,132,1,509189
+BRDA:75,191,0,454831
+BRDA:75,191,1,54358
+BRDA:75,217,0,108716
+BRDA:77,233,0,54358
+BRDA:77,233,1,108716
+BRDA:75,217,1,400473
+BRDA:61,277,0,61194
+FN:89,System.Collections.ArrayList Onix.Api.Commons.ManipulationBase::setUpFieldConfigs(System.Collections.ArrayList)
 FNDA:90,System.Collections.ArrayList Onix.Api.Commons.ManipulationBase::setUpFieldConfigs(System.Collections.ArrayList)
-DA:97,90
-DA:98,90
-DA:99,2504
+DA:90,90
+DA:91,90
+DA:92,2504
+DA:93,1117
+DA:94,1117
+DA:95,1117
+DA:96,1117
+DA:98,1117
+DA:99,1117
 DA:100,1117
 DA:101,1117
-DA:102,1117
-DA:103,1117
-DA:105,1117
+DA:102,176
+DA:103,176
+DA:104,176
 DA:106,1117
 DA:107,1117
-DA:108,1117
-DA:109,176
-DA:110,176
-DA:111,176
-DA:113,1117
-DA:114,1117
-DA:116,90
-DA:117,90
-BRDA:99,129,1,1117
-BRDA:108,99,0,176
-BRDA:108,99,1,1117
-BRDA:99,129,0,90
+DA:109,90
+DA:110,90
+BRDA:92,129,1,1117
+BRDA:101,99,0,176
+BRDA:101,99,1,1117
+BRDA:92,129,0,90
 FN:17,System.Void Onix.Api.Commons.ManipulationBase::.ctor(Microsoft.EntityFrameworkCore.DbContext)
 FNDA:96,System.Void Onix.Api.Commons.ManipulationBase::.ctor(Microsoft.EntityFrameworkCore.DbContext)
 DA:18,96
 DA:19,96
 DA:20,96
-DA:27,96
-DA:28,96
-DA:29,96
 DA:30,96
-LF:77
+DA:31,96
+DA:32,96
+DA:33,96
+LF:71
 LH:71
 BRF:22
 BRH:22
-FNF:9
+FNF:7
 FNH:7
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationDelete.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationDelete.cs
 FN:17,System.Int32 Onix.Api.Commons.ManipulationDelete::Apply(Onix.Api.Commons.CTable)
 FNDA:3505,System.Int32 Onix.Api.Commons.ManipulationDelete::Apply(Onix.Api.Commons.CTable)
 DA:18,3505
 DA:19,3505
 DA:20,2505
 DA:21,2505
-FN:23,System.Void Onix.Api.Commons.ManipulationDelete::deleteData(Onix.Api.Commons.CTable)
-FNDA:0,System.Void Onix.Api.Commons.ManipulationDelete::deleteData(Onix.Api.Commons.CTable)
-DA:24,0
-DA:26,0
-FN:28,System.Void Onix.Api.Commons.ManipulationDelete::applyDelete(Onix.Api.Commons.CTable)
+FN:23,System.Void Onix.Api.Commons.ManipulationDelete::applyDelete(Onix.Api.Commons.CTable)
 FNDA:3505,System.Void Onix.Api.Commons.ManipulationDelete::applyDelete(Onix.Api.Commons.CTable)
-DA:29,3505
+DA:24,3505
+DA:25,3505
+DA:27,3505
+DA:28,3505
 DA:30,3505
 DA:32,3505
-DA:33,3505
-DA:35,3505
-DA:37,3505
-DA:39,3505
-DA:40,2505
-FN:42,System.Void Onix.Api.Commons.ManipulationDelete::setUp(Onix.Api.Commons.ConfigFields)
+DA:34,3505
+DA:35,2505
+FN:37,System.Void Onix.Api.Commons.ManipulationDelete::setUp(Onix.Api.Commons.ConfigFields)
 FNDA:6,System.Void Onix.Api.Commons.ManipulationDelete::setUp(Onix.Api.Commons.ConfigFields)
+DA:38,6
+DA:39,6
+DA:41,6
+DA:42,30
 DA:43,6
 DA:44,6
-DA:45,0
-DA:46,0
+DA:45,6
+DA:46,6
+DA:48,6
 DA:49,6
-DA:51,6
-DA:52,30
+DA:50,6
+DA:52,6
 DA:53,6
-DA:54,6
 DA:55,6
 DA:56,6
-DA:58,6
-DA:59,6
-DA:60,6
-DA:62,6
-DA:63,6
-DA:65,6
-DA:66,6
-BRDA:44,7,0,0
-BRDA:44,7,1,6
-BRDA:52,125,1,6
-BRDA:52,125,0,6
+BRDA:42,109,1,6
+BRDA:42,109,0,6
 FN:12,System.Void Onix.Api.Commons.ManipulationDelete::.ctor(Microsoft.EntityFrameworkCore.DbContext)
 FNDA:6,System.Void Onix.Api.Commons.ManipulationDelete::.ctor(Microsoft.EntityFrameworkCore.DbContext)
 DA:13,6
 DA:14,6
 DA:15,6
-LF:35
-LH:31
-BRF:4
-BRH:3
-FNF:5
+LF:30
+LH:30
+BRF:2
+BRH:2
+FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationGetSeq.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationGetSeq.cs
 FN:15,System.Int32 Onix.Api.Commons.ManipulationGetSeq::GetNextValue(System.String)
 FNDA:0,System.Int32 Onix.Api.Commons.ManipulationGetSeq::GetNextValue(System.String)
 DA:16,0
@@ -1907,104 +1887,86 @@ BRH:0
 FNF:2
 FNH:1
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationInsert.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationInsert.cs
 FN:17,System.Int32 Onix.Api.Commons.ManipulationInsert::Apply(Onix.Api.Commons.CTable)
 FNDA:55685,System.Int32 Onix.Api.Commons.ManipulationInsert::Apply(Onix.Api.Commons.CTable)
 DA:18,55685
 DA:19,55685
 DA:20,55685
 DA:21,55685
-FN:23,System.Void Onix.Api.Commons.ManipulationInsert::addData(Onix.Api.Commons.CTable)
-FNDA:0,System.Void Onix.Api.Commons.ManipulationInsert::addData(Onix.Api.Commons.CTable)
-DA:24,0
-DA:26,0
-FN:28,System.Void Onix.Api.Commons.ManipulationInsert::applyAdd(Onix.Api.Commons.CTable)
+FN:23,System.Void Onix.Api.Commons.ManipulationInsert::applyAdd(Onix.Api.Commons.CTable)
 FNDA:55685,System.Void Onix.Api.Commons.ManipulationInsert::applyAdd(Onix.Api.Commons.CTable)
-DA:29,55685
+DA:24,55685
+DA:25,55685
+DA:27,55685
+DA:28,55685
 DA:30,55685
-DA:32,55685
+DA:31,55685
 DA:33,55685
+DA:34,55685
 DA:35,55685
-DA:36,55685
-DA:38,55685
-DA:39,55685
-DA:40,55685
-FN:42,System.Void Onix.Api.Commons.ManipulationInsert::setUp(Onix.Api.Commons.ConfigFields)
+FN:37,System.Void Onix.Api.Commons.ManipulationInsert::setUp(Onix.Api.Commons.ConfigFields)
 FNDA:86,System.Void Onix.Api.Commons.ManipulationInsert::setUp(Onix.Api.Commons.ConfigFields)
+DA:38,86
+DA:39,86
+DA:42,86
 DA:43,86
-DA:44,86
-DA:45,0
-DA:46,0
-DA:49,86
-DA:52,86
-DA:53,86
-DA:55,86
-DA:56,86
-DA:57,86
-BRDA:44,7,0,0
-BRDA:44,7,1,86
+DA:45,86
+DA:46,86
+DA:47,86
 FN:12,System.Void Onix.Api.Commons.ManipulationInsert::.ctor(Microsoft.EntityFrameworkCore.DbContext)
 FNDA:86,System.Void Onix.Api.Commons.ManipulationInsert::.ctor(Microsoft.EntityFrameworkCore.DbContext)
 DA:13,86
 DA:14,86
 DA:15,86
-LF:28
-LH:24
-BRF:2
-BRH:1
-FNF:5
+LF:23
+LH:23
+BRF:0
+BRH:0
+FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationUpdate.cs
-FN:16,System.Int32 Onix.Api.Commons.ManipulationUpdate::Apply(Onix.Api.Commons.CTable)
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ManipulationUpdate.cs
+FN:18,System.Int32 Onix.Api.Commons.ManipulationUpdate::Apply(Onix.Api.Commons.CTable)
 FNDA:2004,System.Int32 Onix.Api.Commons.ManipulationUpdate::Apply(Onix.Api.Commons.CTable)
-DA:17,2004
-DA:18,2004
 DA:19,2004
 DA:20,2004
-FN:22,System.Void Onix.Api.Commons.ManipulationUpdate::updateData(Onix.Api.Commons.CTable)
-FNDA:0,System.Void Onix.Api.Commons.ManipulationUpdate::updateData(Onix.Api.Commons.CTable)
-DA:23,0
-DA:25,0
-FN:27,System.Void Onix.Api.Commons.ManipulationUpdate::applyUpdate(Onix.Api.Commons.CTable)
+DA:21,2004
+DA:22,2004
+FN:24,System.Void Onix.Api.Commons.ManipulationUpdate::applyUpdate(Onix.Api.Commons.CTable)
 FNDA:2004,System.Void Onix.Api.Commons.ManipulationUpdate::applyUpdate(Onix.Api.Commons.CTable)
+DA:25,2004
+DA:26,2004
 DA:28,2004
 DA:29,2004
 DA:31,2004
 DA:32,2004
-DA:34,2004
+DA:33,2004
 DA:35,2004
 DA:36,2004
-DA:38,2004
-DA:39,2004
-DA:40,2004
-FN:42,System.Void Onix.Api.Commons.ManipulationUpdate::setUp(Onix.Api.Commons.ConfigFields,System.String)
+DA:37,2004
+FN:39,System.Void Onix.Api.Commons.ManipulationUpdate::setUp(Onix.Api.Commons.ConfigFields,System.String)
 FNDA:4,System.Void Onix.Api.Commons.ManipulationUpdate::setUp(Onix.Api.Commons.ConfigFields,System.String)
-DA:43,4
-DA:44,4
-DA:46,4
-DA:47,0
-DA:48,0
-DA:51,4
-DA:54,4
-DA:56,4
-DA:57,4
-DA:58,4
-BRDA:46,14,0,0
-BRDA:46,14,1,4
-FN:11,System.Void Onix.Api.Commons.ManipulationUpdate::.ctor(Microsoft.EntityFrameworkCore.DbContext)
+DA:40,4
+DA:41,4
+DA:42,4
+DA:45,4
+DA:47,4
+DA:48,4
+DA:49,4
+FN:13,System.Void Onix.Api.Commons.ManipulationUpdate::.ctor(Microsoft.EntityFrameworkCore.DbContext)
 FNDA:4,System.Void Onix.Api.Commons.ManipulationUpdate::.ctor(Microsoft.EntityFrameworkCore.DbContext)
-DA:12,4
-DA:13,4
 DA:14,4
-LF:29
-LH:25
-BRF:2
-BRH:1
-FNF:5
+DA:15,4
+DA:16,4
+LF:24
+LH:24
+BRF:0
+BRH:0
+FNF:4
 FNH:4
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\QueryBase.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\QueryBase.cs
 FN:19,System.Void Onix.Api.Commons.QueryConfig::.ctor()
 FNDA:92,System.Void Onix.Api.Commons.QueryConfig::.ctor()
 DA:20,92
@@ -2189,135 +2151,129 @@ DA:197,161322
 DA:198,160220
 DA:199,160220
 DA:200,160220
-DA:202,161322
-DA:203,0
-DA:204,0
-DA:205,0
-DA:206,161322
-DA:207,162414
-DA:208,162414
-DA:209,26513
-BRDA:182,188,1,372291
+DA:201,161322
+DA:202,162414
+DA:203,162414
+DA:204,26513
+BRDA:182,165,1,372291
 BRDA:184,40,0,209877
 BRDA:184,40,1,162414
-BRDA:193,90,0,161322
-BRDA:197,132,0,160220
-BRDA:197,132,1,161322
-BRDA:202,154,0,0
-BRDA:202,154,1,161322
-BRDA:193,90,1,162414
-BRDA:182,188,0,26513
-FN:211,System.Linq.IQueryable Onix.Api.Commons.QueryBase::applyLimitOffset(System.Linq.IQueryable,System.Int32,Onix.Api.Commons.CTable)
+BRDA:193,87,0,161322
+BRDA:197,129,0,160220
+BRDA:197,129,1,161322
+BRDA:193,87,1,162414
+BRDA:182,165,0,26513
+FN:206,System.Linq.IQueryable Onix.Api.Commons.QueryBase::applyLimitOffset(System.Linq.IQueryable,System.Int32,Onix.Api.Commons.CTable)
 FNDA:17,System.Linq.IQueryable Onix.Api.Commons.QueryBase::applyLimitOffset(System.Linq.IQueryable,System.Int32,Onix.Api.Commons.CTable)
-DA:212,17
+DA:207,17
+DA:208,17
+DA:210,17
+DA:211,17
 DA:213,17
-DA:215,17
-DA:216,17
-DA:218,17
-DA:219,17
-DA:220,9
-DA:222,9
-DA:223,9
+DA:214,17
+DA:215,9
+DA:217,9
+DA:218,9
+DA:220,17
+DA:221,8
+DA:222,8
+DA:223,8
 DA:225,17
-DA:226,8
-DA:227,8
-DA:228,8
+DA:226,17
+DA:228,17
+DA:229,17
 DA:230,17
-DA:231,17
-DA:233,17
-DA:234,17
-DA:235,17
-BRDA:219,53,0,9
-BRDA:219,53,1,17
-BRDA:225,75,0,8
-BRDA:225,75,1,17
-FN:237,System.Collections.ArrayList Onix.Api.Commons.QueryBase::Query(Onix.Api.Commons.CTable,System.Boolean)
+BRDA:214,53,0,9
+BRDA:214,53,1,17
+BRDA:220,75,0,8
+BRDA:220,75,1,17
+FN:232,System.Collections.ArrayList Onix.Api.Commons.QueryBase::Query(Onix.Api.Commons.CTable,System.Boolean)
 FNDA:92,System.Collections.ArrayList Onix.Api.Commons.QueryBase::Query(Onix.Api.Commons.CTable,System.Boolean)
+DA:233,92
+DA:234,92
+DA:235,92
+DA:237,92
 DA:238,92
-DA:239,92
 DA:240,92
+DA:241,92
 DA:242,92
 DA:243,92
-DA:245,92
-DA:246,92
-DA:247,92
-DA:248,92
+DA:244,92
+DA:245,17
+DA:246,17
+DA:247,17
 DA:249,92
-DA:250,17
-DA:251,17
-DA:252,17
-DA:254,92
-DA:256,53302
+DA:251,53302
+DA:252,26513
+DA:253,26513
+DA:254,26513
+DA:255,26513
 DA:257,26513
 DA:258,26513
 DA:259,26513
-DA:260,26513
-DA:262,26513
-DA:263,26513
+DA:260,1101
+DA:261,1101
+DA:262,1101
 DA:264,26513
-DA:265,1101
-DA:266,1101
-DA:267,1101
-DA:269,26513
-DA:270,25962
-DA:271,25962
-DA:272,25962
-DA:273,26513
-DA:275,92
-DA:276,92
-BRDA:245,48,0,92
-BRDA:249,81,0,17
-BRDA:249,81,1,92
-BRDA:245,48,1,92
-BRDA:256,240,1,26513
-BRDA:264,198,0,1101
-BRDA:264,198,1,26513
-BRDA:269,219,0,25962
-BRDA:269,219,1,26513
-BRDA:256,240,0,92
-FN:278,System.Collections.ArrayList Onix.Api.Commons.QueryBase::Query(Onix.Api.Commons.CTable)
+DA:265,25962
+DA:266,25962
+DA:267,25962
+DA:268,26513
+DA:270,92
+DA:271,92
+BRDA:240,48,0,92
+BRDA:244,81,0,17
+BRDA:244,81,1,92
+BRDA:240,48,1,92
+BRDA:251,240,1,26513
+BRDA:259,198,0,1101
+BRDA:259,198,1,26513
+BRDA:264,219,0,25962
+BRDA:264,219,1,26513
+BRDA:251,240,0,92
+FN:273,System.Collections.ArrayList Onix.Api.Commons.QueryBase::Query(Onix.Api.Commons.CTable)
 FNDA:6,System.Collections.ArrayList Onix.Api.Commons.QueryBase::Query(Onix.Api.Commons.CTable)
-DA:279,6
-DA:280,6
-DA:281,6
-DA:282,6
-FN:284,System.Void Onix.Api.Commons.QueryBase::OverrideOrderBy(Onix.Api.Commons.OrderByDelegate`1<Onix.Api.Commons.ViewBase>)
+DA:274,6
+DA:275,6
+DA:276,6
+DA:277,6
+FN:279,System.Void Onix.Api.Commons.QueryBase::OverrideOrderBy(Onix.Api.Commons.OrderByDelegate`1<Onix.Api.Commons.ViewBase>)
 FNDA:3,System.Void Onix.Api.Commons.QueryBase::OverrideOrderBy(Onix.Api.Commons.OrderByDelegate`1<Onix.Api.Commons.ViewBase>)
-DA:285,3
-DA:286,3
-DA:287,3
-DA:288,3
-FN:290,System.Void Onix.Api.Commons.QueryBase::RegisterCustomerWhere(Onix.Api.Commons.CustomWhereExprDelegate)
+DA:280,3
+DA:281,3
+DA:282,3
+DA:283,3
+FN:285,System.Void Onix.Api.Commons.QueryBase::RegisterCustomerWhere(Onix.Api.Commons.CustomWhereExprDelegate)
 FNDA:2,System.Void Onix.Api.Commons.QueryBase::RegisterCustomerWhere(Onix.Api.Commons.CustomWhereExprDelegate)
-DA:291,2
-DA:292,2
-DA:293,2
-FN:295,System.Void Onix.Api.Commons.QueryBase::RegisterQueryFilter(Onix.Api.Commons.QueryFilterDelegate)
+DA:286,2
+DA:287,2
+DA:288,2
+FN:290,System.Void Onix.Api.Commons.QueryBase::RegisterQueryFilter(Onix.Api.Commons.QueryFilterDelegate)
 FNDA:3,System.Void Onix.Api.Commons.QueryBase::RegisterQueryFilter(Onix.Api.Commons.QueryFilterDelegate)
-DA:296,3
-DA:297,3
-DA:298,3
-FN:300,System.Void Onix.Api.Commons.QueryBase::SetPageChunk(System.String,System.Int32)
+DA:291,3
+DA:292,3
+DA:293,3
+FN:295,System.Void Onix.Api.Commons.QueryBase::SetPageChunk(System.String,System.Int32)
 FNDA:8,System.Void Onix.Api.Commons.QueryBase::SetPageChunk(System.String,System.Int32)
-DA:301,8
-DA:302,8
-DA:303,8
-DA:304,8
-FN:306,System.Void Onix.Api.Commons.QueryBase::SetChunkSize(System.Int32)
+DA:296,8
+DA:297,8
+DA:298,8
+DA:299,8
+FN:301,System.Void Onix.Api.Commons.QueryBase::SetChunkSize(System.Int32)
 FNDA:6,System.Void Onix.Api.Commons.QueryBase::SetChunkSize(System.Int32)
-DA:307,6
-DA:308,6
-DA:309,6
-FN:311,System.Int32 Onix.Api.Commons.QueryBase::GetTotalRow()
+DA:302,6
+DA:303,6
+DA:304,6
+FN:306,System.Int32 Onix.Api.Commons.QueryBase::GetTotalRow()
 FNDA:7,System.Int32 Onix.Api.Commons.QueryBase::GetTotalRow()
-DA:312,7
-DA:313,7
-DA:314,7
-FN:316,System.Int32 Onix.Api.Commons.QueryBase::GetTotalChunk()
+DA:307,7
+DA:308,7
+DA:309,7
+FN:311,System.Int32 Onix.Api.Commons.QueryBase::GetTotalChunk()
 FNDA:6,System.Int32 Onix.Api.Commons.QueryBase::GetTotalChunk()
-DA:317,6
-DA:318,6
-DA:319,6
+DA:312,6
+DA:313,6
+DA:314,6
 FN:46,System.Void Onix.Api.Commons.QueryBase::.ctor(Microsoft.EntityFrameworkCore.DbContext)
 FNDA:92,System.Void Onix.Api.Commons.QueryBase::.ctor(Microsoft.EntityFrameworkCore.DbContext)
 DA:47,92
@@ -2329,14 +2285,14 @@ DA:175,92
 DA:176,92
 DA:177,92
 DA:178,92
-LF:222
-LH:219
-BRF:64
-BRH:63
+LF:218
+LH:218
+BRF:62
+BRH:62
 FNF:19
 FNH:19
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\QueryExpression.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\QueryExpression.cs
 FN:14,System.Linq.Expressions.Expression Onix.Api.Commons.QueryExpression::GetExpression(System.Linq.Expressions.ParameterExpression,System.String)
 FNDA:59,System.Linq.Expressions.Expression Onix.Api.Commons.QueryExpression::GetExpression(System.Linq.Expressions.ParameterExpression,System.String)
 DA:15,59
@@ -2512,7 +2468,7 @@ BRH:18
 FNF:12
 FNH:12
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ViewBase.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\ViewBase.cs
 FN:7,System.Void Onix.Api.Commons.ViewBase::.ctor()
 FNDA:55471,System.Void Onix.Api.Commons.ViewBase::.ctor()
 DA:8,55471
@@ -2525,35 +2481,30 @@ BRH:0
 FNF:1
 FNH:1
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\Business\BusinessOperationBase.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\Business\BusinessOperationBase.cs
 FN:14,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Commons.Business.BusinessOperationBase::get_DbContext()
 FNDA:2,Microsoft.EntityFrameworkCore.DbContext Onix.Api.Commons.Business.BusinessOperationBase::get_DbContext()
 DA:15,2
 DA:16,2
 DA:17,2
-FN:20,Onix.Api.Commons.CTable Onix.Api.Commons.Business.BusinessOperationBase::Execute(Onix.Api.Commons.CTable)
-FNDA:0,Onix.Api.Commons.CTable Onix.Api.Commons.Business.BusinessOperationBase::Execute(Onix.Api.Commons.CTable)
-DA:21,0
-DA:22,0
-DA:23,0
-FN:25,Onix.Api.Commons.CTable Onix.Api.Commons.Business.BusinessOperationBase::Apply(Onix.Api.Commons.CTable,Microsoft.EntityFrameworkCore.DbContext)
-FNDA:4,Onix.Api.Commons.CTable Onix.Api.Commons.Business.BusinessOperationBase::Apply(Onix.Api.Commons.CTable,Microsoft.EntityFrameworkCore.DbContext)
-DA:26,4
-DA:27,4
-DA:29,4
-DA:30,3
-DA:31,3
-FN:9,System.Void Onix.Api.Commons.Business.BusinessOperationBase::.ctor()
-FNDA:4,System.Void Onix.Api.Commons.Business.BusinessOperationBase::.ctor()
-DA:10,4
-LF:12
+FN:20,Onix.Api.Commons.CTable Onix.Api.Commons.Business.BusinessOperationBase::Apply(Onix.Api.Commons.CTable,Microsoft.EntityFrameworkCore.DbContext)
+FNDA:10,Onix.Api.Commons.CTable Onix.Api.Commons.Business.BusinessOperationBase::Apply(Onix.Api.Commons.CTable,Microsoft.EntityFrameworkCore.DbContext)
+DA:21,10
+DA:22,10
+DA:24,10
+DA:25,5
+DA:26,5
+FN:7,System.Void Onix.Api.Commons.Business.BusinessOperationBase::.ctor()
+FNDA:10,System.Void Onix.Api.Commons.Business.BusinessOperationBase::.ctor()
+DA:8,10
+LF:9
 LH:9
 BRF:0
 BRH:0
-FNF:4
+FNF:3
 FNH:3
 end_of_record
-SF:d:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\Business\BusinessOperationOption.cs
+SF:D:\dev\projects\onix_workspace\onixapi\sources\Onix\Api\Commons\Business\BusinessOperationOption.cs
 FN:14,System.Boolean Onix.Api.Commons.Business.BusinessOperationOption::IsRoleAllow(System.String)
 FNDA:11,System.Boolean Onix.Api.Commons.Business.BusinessOperationOption::IsRoleAllow(System.String)
 DA:15,11

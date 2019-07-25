@@ -7,8 +7,10 @@ using Onix.Api.Erp.Dao.Models;
 
 namespace Onix.Api.Commons
 {
-	public class ManipulationUpdate : ManipulationBase
+	public abstract class ManipulationUpdate : ManipulationBase
 	{
+        protected abstract void updateData(CTable data);
+
         public ManipulationUpdate(DbContext db) : base(db)
         {
         }
@@ -17,11 +19,6 @@ namespace Onix.Api.Commons
         {
             updateData(data);
             return(1);
-        }
-
-        protected virtual void updateData(CTable data)
-        {
-            //Do nothing            
         }
 
         protected void applyUpdate<T>(CTable data) where T : OnixBaseModel
@@ -42,12 +39,6 @@ namespace Onix.Api.Commons
         protected void setUp(ConfigFields cfgFunc, string keyName)
         {
             pkFieldName = keyName;
-
-            if (cfgFunc == null)
-            {
-                return;
-            }
-
             ArrayList arr = cfgFunc();
 
             //Default fields here
